@@ -1,0 +1,75 @@
+:root {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333;
+  background-color: #f8f9fa;
+  /* Slightly lighter gray */
+  --primary-color: #113C89;
+  /* NYCU Official Blue (Approx matching logo) */
+  --secondary-color: #3861AC;
+  /* Lighter Blue */
+  --accent-color: #e3f2fd;
+  /* Very light blue for backgrounds */
+  --text-color: #333333;
+  /* Default text */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Common container for content */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: white;
+}
+
+.content-section {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1280px;
+  /* Wider desktop layout */
+  margin: 0 auto;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .content-section {
+    padding: 1rem;
+  }
+}
+
+.content-section.no-padding {
+  padding: 0;
+}
