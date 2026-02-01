@@ -19,7 +19,7 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
         <li><Link to="/" onClick={closeMenu}>CMCT 2026</Link></li>
         <li>
           <a
-            href="https://theoryday-2026.github.io/"
+            href="https://theoryday-2026.github.io/Theoryday-202"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMenu}
