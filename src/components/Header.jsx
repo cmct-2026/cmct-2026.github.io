@@ -45,7 +45,7 @@ const Header = () => {
                     color: '#666',
                     fontWeight: 'normal'
                 }}>
-                    April 2026 @ National Yang Ming Chiao Tung University, Taiwan
+                    April 24-25, 2026 @ National Yang Ming Chiao Tung University, Taiwan
                 </h2>
             </div>
         </header>

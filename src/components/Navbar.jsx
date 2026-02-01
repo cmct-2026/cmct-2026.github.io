@@ -17,16 +17,26 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
 
       <ul className={`navbar-list ${isMenuOpen ? 'active' : ''}`}>
         <li><Link to="/" onClick={closeMenu}>CMCT 2026</Link></li>
+        <li>
+          <a
+            href="https://theoryday-2026.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+            className="external-link"
+          >
+            Theory Day
+          </a>
+        </li>
         <li><Link to="/committee" onClick={closeMenu}>Committees</Link></li>
         <li><Link to="/important-dates" onClick={closeMenu}>Important Dates</Link></li>
         <li><Link to="/call-for-papers" onClick={closeMenu}>Call for Papers</Link></li>
-        <li><Link to="/paper-submission" onClick={closeMenu}>Paper Submission</Link></li>
         <li><Link to="/accepted-papers" onClick={closeMenu}>Accepted Papers</Link></li>
         <li><Link to="/program" onClick={closeMenu}>Program</Link></li>
         <li><Link to="/keynote-speakers" onClick={closeMenu}>Keynote Speakers</Link></li>
         <li><Link to="/invited-presentations" onClick={closeMenu}>Invited Presentations</Link></li>
         <li><Link to="/registration" onClick={closeMenu}>Registration</Link></li>
-        <li><Link to="/venue" onClick={closeMenu}>Venue</Link></li>
+        <li><Link to="/venue" onClick={closeMenu}>Venue & Accommodation</Link></li>
         <li><Link to="/help-desk" onClick={closeMenu}>Help Desk</Link></li>
       </ul>
       <style>{`
@@ -91,6 +101,13 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
           line-height: 1.2;
           box-sizing: border-box;
         }
+          .navbar-list li a.external-link {
+            background-color: #6c757d;
+          }
+          .navbar-list li a.external-link:hover {
+            background-color: #5a6268;
+          }
+        
         .navbar-list li a:hover {
           background-color: var(--secondary-color);
         }

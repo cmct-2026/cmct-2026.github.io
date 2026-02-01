@@ -9,7 +9,6 @@ import Program from './pages/Program';
 import Registration from './pages/Registration';
 import Venue from './pages/Venue';
 import ImportantDates from './pages/ImportantDates';
-import PaperSubmission from './pages/PaperSubmission';
 import AcceptedPapers from './pages/AcceptedPapers';
 import KeynoteSpeakers from './pages/KeynoteSpeakers';
 import InvitedPresentations from './pages/InvitedPresentations';
@@ -30,7 +29,6 @@ const MainContent = () => {
         <Route path="/committee" element={<Committee />} />
         <Route path="/important-dates" element={<ImportantDates />} />
         <Route path="/call-for-papers" element={<CallForPapers />} />
-        <Route path="/paper-submission" element={<PaperSubmission />} />
         <Route path="/accepted-papers" element={<AcceptedPapers />} />
         <Route path="/program" element={<Program />} />
         <Route path="/keynote-speakers" element={<KeynoteSpeakers />} />

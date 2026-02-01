@@ -1,8 +1,8 @@
 const AcceptedPapers = () => {
     return (
         <div>
-            <h2>Accepted Papers</h2>
-            <p>The list of accepted papers will be published here after the notification date.</p>
+            <h2 style={{ color: '#003366' }}>Accepted Papers</h2>
+            <p>Expected date of announcement: April 1, 2026</p>
         </div>
     );
 };
