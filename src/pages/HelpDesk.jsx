@@ -22,7 +22,7 @@ const HelpDesk = () => {
                             <div>Email: <a href="mailto:mjkao@cs.nycu.edu.tw" style={{ color: '#0056b3' }}>mjkao@cs.nycu.edu.tw</a></div>
                         </li>
                         <li>
-                            <div style={{ fontWeight: 'bold', fontSize: '1.05rem', marginBottom: '0.3rem' }}>Po-An Chen</div>
+                            <div style={{ fontWeight: 'bold', fontSize: '1.05rem', marginBottom: '0.3rem' }}>Professor Po-An Chen</div>
                             <div style={{ color: '#666', marginBottom: '0.3rem' }}>Institute of Information Management, National Yang Ming Chiao Tung University</div>
                             <div>Email: <a href="mailto:poanchen@nycu.edu.tw" style={{ color: '#0056b3' }}>poanchen@nycu.edu.tw</a></div>
                         </li>
