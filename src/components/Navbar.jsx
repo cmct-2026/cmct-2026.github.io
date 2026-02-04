@@ -34,9 +34,9 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
         {/* <li><Link to="/accepted-papers" onClick={closeMenu}>Accepted Papers</Link></li>
         <li><Link to="/program" onClick={closeMenu}>Program</Link></li>
         <li><Link to="/keynote-speakers" onClick={closeMenu}>Keynote Speakers</Link></li> */}
-        <li><Link to="/invited-presentations" onClick={closeMenu}>Invited Presentations and talks</Link></li>
+        <li><Link to="/invited-presentations" onClick={closeMenu}>Invited talks & Presentations</Link></li>
         <li><Link to="/registration" onClick={closeMenu}>Registration</Link></li>
-        <li><Link to="/invited-presentations" onClick={closeMenu}>NYCU Theory Day</Link></li>
+        <li style={{ backgroundColor: '#1ebaef' }}><Link to="/theory-day" onClick={closeMenu}>NYCU <br /> Theory Day</Link></li>
         <li><Link to="/venue" onClick={closeMenu}>Venue & Accommodation</Link></li>
         <li><Link to="/help-desk" onClick={closeMenu}>Help Desk</Link></li>
       </ul>
