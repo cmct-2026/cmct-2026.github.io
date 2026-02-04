@@ -17,7 +17,7 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
 
       <ul className={`navbar-list ${isMenuOpen ? 'active' : ''}`}>
         <li><Link to="/" onClick={closeMenu}>CMCT 2026</Link></li>
-        <li>
+        {/* <li>
           <a
             href="https://theoryday-2026.github.io/Theoryday-2026"
             target="_blank"
@@ -27,15 +27,16 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
           >
             Theory Day
           </a>
-        </li>
+        </li> */}
         <li><Link to="/committee" onClick={closeMenu}>Committees</Link></li>
         <li><Link to="/important-dates" onClick={closeMenu}>Important Dates</Link></li>
         <li><Link to="/call-for-papers" onClick={closeMenu}>Call for Papers</Link></li>
-        <li><Link to="/accepted-papers" onClick={closeMenu}>Accepted Papers</Link></li>
+        {/* <li><Link to="/accepted-papers" onClick={closeMenu}>Accepted Papers</Link></li>
         <li><Link to="/program" onClick={closeMenu}>Program</Link></li>
-        <li><Link to="/keynote-speakers" onClick={closeMenu}>Keynote Speakers</Link></li>
-        <li><Link to="/invited-presentations" onClick={closeMenu}>Invited Presentations</Link></li>
+        <li><Link to="/keynote-speakers" onClick={closeMenu}>Keynote Speakers</Link></li> */}
+        <li><Link to="/invited-presentations" onClick={closeMenu}>Invited Presentations and talks</Link></li>
         <li><Link to="/registration" onClick={closeMenu}>Registration</Link></li>
+        <li><Link to="/invited-presentations" onClick={closeMenu}>NYCU Theory Day</Link></li>
         <li><Link to="/venue" onClick={closeMenu}>Venue & Accommodation</Link></li>
         <li><Link to="/help-desk" onClick={closeMenu}>Help Desk</Link></li>
       </ul>
