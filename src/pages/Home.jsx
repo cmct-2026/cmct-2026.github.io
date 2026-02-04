@@ -28,7 +28,7 @@ const Home = () => {
 
 
 
-                <h3 style={{ marginTop: '3rem', borderTop: '1px solid #eee', paddingTop: '2rem', textAlign: 'center' }}>Organizers</h3>
+                {/* <h3 style={{ marginTop: '3rem', borderTop: '1px solid #eee', paddingTop: '2rem', textAlign: 'center' }}>Organizers</h3>
                 <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', marginTop: '1.5rem' }}>
                     <img src={organizer1} alt="Organizer 1" style={{ height: '100px', objectFit: 'contain' }} />
                     <img src={organizer2} alt="Organizer 2" style={{ height: '100px', objectFit: 'contain' }} />
@@ -38,7 +38,7 @@ const Home = () => {
                 <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', marginTop: '1.5rem' }}>
                     <img src={coOrganizerEtpc} alt="Co-Organizer ETPC" style={{ height: '80px', objectFit: 'contain' }} />
                     <img src={coOrganizerIis} alt="Co-Organizer IIS" style={{ height: '80px', objectFit: 'contain' }} />
-                </div>
+                </div> */}
             </div>
         </div>
     );
