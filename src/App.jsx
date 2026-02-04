@@ -29,10 +29,10 @@ const MainContent = () => {
         <Route path="/committee" element={<Committee />} />
         <Route path="/important-dates" element={<ImportantDates />} />
         <Route path="/call-for-papers" element={<CallForPapers />} />
-        <Route path="/accepted-papers" element={<AcceptedPapers />} />
-        <Route path="/program" element={<Program />} />
-        <Route path="/keynote-speakers" element={<KeynoteSpeakers />} />
-        <Route path="/invited-presentations" element={<InvitedPresentations />} />
+        {/* <Route path="/accepted-papers" element={<AcceptedPapers />} /> */}
+        {/* <Route path="/program" element={<Program />} /> */}
+        {/* <Route path="/keynote-speakers" element={<KeynoteSpeakers />} /> */}
+        <Route path="/invited talks and presentations" element={<InvitedPresentations />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/venue" element={<Venue />} />
         <Route path="/help-desk" element={<HelpDesk />} />
