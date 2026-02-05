@@ -1,96 +1,145 @@
-const Venue = () => {
-    return (
-        <div>
-            <h2 style={{ color: '#003366' }}>Venue and Accommodation</h2>
+import React from 'react';
 
-            <section style={{ marginBottom: '2rem' }}>
-                <p style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>
-                    <strong>電子資訊研究大樓 Google Map:</strong> <a href="https://goo.gl/maps/kVHCrKiHgN2m92Er8" target="_blank" rel="noopener noreferrer" style={{ color: '#0056b3' }}>https://goo.gl/maps/kVHCrKiHgN2m92Er8</a>
+const Venue = () => {
+    const sectionStyle = {
+        marginBottom: '3.5rem',
+        width: '100%'
+    };
+
+    const sectionTitleStyle = {
+        color: '#003366',
+        fontSize: '1.5rem',
+        marginBottom: '1.5rem',
+        fontWeight: 'bold',
+        borderBottom: '2px solid #eee',
+        paddingBottom: '0.5rem'
+    };
+
+    const transportGroupStyle = {
+        marginBottom: '2rem',
+        textAlign: 'left'
+    };
+
+    const labelStyle = {
+        fontSize: '1.1rem',
+        color: '#333',
+        fontWeight: 'bold',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '0.5rem',
+        marginBottom: '0.8rem'
+    };
+
+    const contentBoxStyle = {
+        lineHeight: '1.8',
+        paddingLeft: '2rem'
+    };
+
+    return (
+        <div style={{ padding: '2rem', maxWidth: '900px', margin: '0 auto', fontFamily: 'sans-serif', color: '#444' }}>
+            <h2 style={{ color: '#003366', fontSize: '2.2rem', marginBottom: '2.5rem', textAlign: 'center' }}>Venue and Accommodation</h2>
+
+            {/* 1. 地圖區塊 */}
+            <section style={sectionStyle}>
+                <p style={{ marginBottom: '1.2rem', fontSize: '1.1rem', textAlign: 'left' }}>
+                    <strong>電子資訊研究大樓 Google Map:</strong>{' '}
+                    <a href="https://goo.gl/maps/kVHCrKiHgN2m92Er8" target="_blank" rel="noopener noreferrer" style={{ color: '#0056b3', textDecoration: 'underline' }}>
+                        https://goo.gl/maps/kVHCrKiHgN2m92Er8
+                    </a>
                 </p>
-                <div style={{ maxWidth: '80%', margin: '0 auto', overflow: 'hidden', borderRadius: '8px', border: '1px solid #ddd' }}>
+                <div style={{ width: '100%', overflow: 'hidden', borderRadius: '4px', border: '1px solid #eee' }}>
                     <img src="/campus_map.png" alt="NYCU Campus Map" style={{ width: '100%', height: 'auto', display: 'block' }} />
                 </div>
             </section>
 
-            <section style={{ marginBottom: '2rem', textAlign: 'center' }}>
-                <h3 style={{ color: '#003366', marginBottom: '2rem', fontWeight: 'bold' }}>交通資訊</h3>
+            {/* 2. 交通資訊區塊 */}
+            <section style={sectionStyle}>
+                <h3 style={sectionTitleStyle}>交通資訊</h3>
 
-                <div style={{ marginBottom: '2.5rem' }}>
-                    <h4 style={{ fontSize: '1.2rem', color: '#333', marginBottom: '1rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                        <span style={{ fontSize: '1.5rem' }}>🚘</span> 自行開車：
-                    </h4>
-                    <div style={{ lineHeight: '1.8', color: '#444', maxWidth: '900px', margin: '0 auto' }}>
+                {/* 自行開車 */}
+                <div style={transportGroupStyle}>
+                    <h4 style={labelStyle}><span>🚘</span> 自行開車：</h4>
+                    <div style={contentBoxStyle}>
                         <div style={{ marginBottom: '1rem' }}>
                             <strong>南下 :</strong> 中山高速公路新竹交流道(94.5K)下，新竹光復路方向第一個紅綠燈左轉進入大學路，即可抵達本校北大門。<br />
-                            <span style={{ fontSize: '0.9rem', color: '#666' }}>（台北⟶中壢⟶新竹交流道（靠右）⟶（左轉入）大學路（加油站旁）⟶交大光復區）</span>
+                            <span style={{ fontSize: '0.9rem', color: '#666' }}>（台北 ⟶ 中壢 ⟶ 新竹交流道（靠右）⟶ 大學路 ⟶ 交大光復校區）</span>
                         </div>
                         <div>
-                            <strong>北上 :</strong>
-                            中山高速公路新竹交流道(94.5K)下，往新竹方向，行駛光復路，左轉大學路，即可抵達本校北大門。<br />
-                            中山高速公路新竹交流道(97K)下，左轉園區二路直駛約三分鐘，在園區二路盡頭左轉新安路，即可抵達本校南大門。<br />
-                            <span style={{ fontSize: '0.9rem', color: '#666' }}>（台中⟶中山高北上（往台北方向）⟶新竹交流道（左轉往新竹市區方向）⟶經光復路（高速公路下）⟶（左轉入）大學路（加油站旁）⟶交大光復校區）</span>
+                            <strong>北上 :</strong><br />
+                            1. 中山高速公路新竹交流道(94.5K)下，往新竹方向，行駛光復路，左轉大學路，即可抵達本校北大門。<br />
+                            2. 中山高速公路新竹交流道(97K)下，左轉園區二路直駛約三分鐘，在園區二路盡頭左轉新安路，即可抵達本校南大門。<br />
+                            <span style={{ fontSize: '0.9rem', color: '#666' }}>（台中 ⟶ 中山高北上 ⟶ 新竹交流道（左轉往新竹市區方向）⟶ 經光復路 ⟶ 大學路 ⟶ 交大光復校區）</span>
                         </div>
                     </div>
                 </div>
 
-                <div style={{ marginBottom: '2.5rem' }}>
-                    <h4 style={{ fontSize: '1.2rem', color: '#333', marginBottom: '1rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                        <span style={{ fontSize: '1.5rem' }}>🚍</span> 搭乘客運：
-                    </h4>
-                    <p style={{ margin: 0, color: '#444' }}>搭乘統聯「 板橋–北二高–新竹」線，即可直達本校。</p>
+                {/* 搭乘客運 */}
+                <div style={transportGroupStyle}>
+                    <h4 style={labelStyle}><span>🚍</span> 搭乘客運：</h4>
+                    <div style={contentBoxStyle}>
+                        <p style={{ margin: 0 }}>搭乘統聯「 板橋–北二高–新竹」線，即可直達本校。</p>
+                    </div>
                 </div>
 
-                <div style={{ marginBottom: '2.5rem' }}>
-                    <h4 style={{ fontSize: '1.2rem', color: '#333', marginBottom: '1rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                        <span style={{ fontSize: '1.5rem' }}>🚆</span> 搭乘高鐵：
-                    </h4>
-                    <p style={{ margin: 0, color: '#444' }}>高鐵（接駁專車）。高鐵新竹站–交通大學站下車，轉市區2路公車或步行至本校。</p>
+                {/* 搭乘高鐵 */}
+                <div style={transportGroupStyle}>
+                    <h4 style={labelStyle}><span>🚆</span> 搭乘高鐵：</h4>
+                    <div style={contentBoxStyle}>
+                        <p style={{ margin: 0 }}>高鐵新竹站下車，轉乘接駁專車至「交通大學站」下車，或轉市區 2 路公車至本校。</p>
+                    </div>
                 </div>
 
-                <div style={{ marginBottom: '2.5rem' }}>
-                    <h4 style={{ fontSize: '1.2rem', color: '#333', marginBottom: '1rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                        <span style={{ fontSize: '1.5rem' }}>🚍</span> 搭乘公車：
-                    </h4>
-                    <div style={{ lineHeight: '1.8', color: '#444', maxWidth: '900px', margin: '0 auto' }}>
-                        <div style={{ marginBottom: '1rem' }}>
-                            <strong>新竹客運2號公車（火車站⟶交通大學）</strong> 約每小時一班<br />
-                            <span style={{ fontSize: '0.9rem', color: '#666' }}>火車站⟶東門市場⟶東門國小⟶公園⟶學園商場⟶交大博愛校區⟶學府路口⟶光復中學⟶清華大學⟶神學院⟶清華山莊⟶交大光復校區</span>
+                {/* 搭乘公車 */}
+                <div style={transportGroupStyle}>
+                    <h4 style={labelStyle}><span>🚌</span> 搭乘公車：</h4>
+                    <div style={contentBoxStyle}>
+                        <div style={{ marginBottom: '0.8rem' }}>
+                            <strong>新竹客運 2 號（火車站 ⟶ 交通大學）：</strong> 約每小時一班<br />
+                            <span style={{ fontSize: '0.9rem', color: '#666' }}>火車站 ⟶ 東門市場 ⟶ 東門國小 ⟶ 公園 ⟶ 學園商場 ⟶ 交大博愛校區 ⟶ 清華大學 ⟶ 交大光復校區</span>
                         </div>
                         <div>
-                            <strong>新竹客運1號公車（火車站⟶過溝）</strong> 約每 10~15 分鐘一班
+                            <strong>新竹客運 1 號（火車站 ⟶ 過溝）：</strong> 約每 10~15 分鐘一班
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section style={{ marginBottom: '2rem', textAlign: 'center' }}>
-                <h3 style={{ color: '#003366', marginBottom: '2rem', fontWeight: 'bold' }}>住宿資訊</h3>
-                <div style={{ lineHeight: '1.8', color: '#444', maxWidth: '800px', margin: '0 auto', textAlign: 'left', display: 'inline-block' }}>
-                    <ul style={{ listStyleType: 'none', padding: 0, textAlign: 'center' }}>
-                        <li style={{ marginBottom: '1rem', fontSize: '1.1rem', fontWeight: 'bold', color: '#333' }}>
-                            新竹老爺酒店 (Hotel Royal Hsinchu)
+            {/* 3. 住宿資訊區塊 */}
+            <section style={sectionStyle}>
+                <h3 style={sectionTitleStyle}>住宿資訊</h3>
+                <ul style={{ 
+                    listStyleType: 'none', 
+                    padding: 0, 
+                    display: 'grid', 
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+                    gap: '1rem',
+                    textAlign: 'left'
+                }}>
+                    {[
+                        "新竹老爺酒店 (Hotel Royal Hsinchu)",
+                        "EPISODE 新竹伊普索凱悅尚選酒店",
+                        "和選旅 THE HO HOTEL",
+                        "老爺商務旅館 (Royal Inn)",
+                        "新竹元首經典旅館 (Chief Hotel)"
+                    ].map((hotel, index) => (
+                        <li key={index} style={{ padding: '0.5rem 0', borderBottom: '1px inset #f9f9f9', fontWeight: '500' }}>
+                            • {hotel}
                         </li>
-                        <li style={{ marginBottom: '1rem', fontSize: '1.1rem', fontWeight: 'bold', color: '#333' }}>
-                            EPISODE 新竹伊普索凱悅尚選酒店 (EPISODE Hsinchu)
-                        </li>
-                        <li style={{ marginBottom: '1rem', fontSize: '1.1rem', fontWeight: 'bold', color: '#333' }}>
-                            和選旅 THE HO HOTEL
-                        </li>
-                        <li style={{ marginBottom: '1rem', fontSize: '1.1rem', fontWeight: 'bold', color: '#333' }}>
-                            老爺商務旅館 (Royal Inn)
-                        </li>
-                        <li style={{ marginBottom: '1rem', fontSize: '1.1rem', fontWeight: 'bold', color: '#333' }}>
-                            新竹元首經典旅館 (Chief Hotel)
-                        </li>
-                    </ul>
-                </div>
+                    ))}
+                </ul>
             </section>
 
-            <section style={{ textAlign: 'center' }}>
-                <h3 style={{ color: '#003366', marginBottom: '1.5rem', fontWeight: 'bold' }}>備註：</h3>
-                <ol style={{ paddingLeft: '0', listStylePosition: 'inside', lineHeight: '2', color: '#444', maxWidth: '900px', margin: '0 auto', textAlign: 'left', display: 'inline-block' }}>
-                    <li style={{ marginBottom: '0.5rem' }}>於大學路的北大門進入交大校園後，通過大門警衛室後需「立即」左轉，沿著竹湖行約三百公尺，於左手邊的荷花池旁向左轉至電子與資訊研究大樓。</li>
-                    <li style={{ marginBottom: '0.5rem' }}>因會場附近停車位有限，自行開車者可能需停於較遠處，再步行至會場。</li>
+            {/* 4. 備註區塊 */}
+            <section style={{ ...sectionStyle, marginBottom: '0' }}>
+                <h3 style={sectionTitleStyle}>備註</h3>
+                <ol style={{ 
+                    paddingLeft: '1.5rem', 
+                    lineHeight: '2', 
+                    textAlign: 'left', 
+                    margin: 0 
+                }}>
+                    <li style={{ marginBottom: '1rem' }}>於大學路的北大門進入交大校園後，通過大門警衛室後需<strong>「立即」左轉</strong>，沿著竹湖行約三百公尺，於左手邊的荷花池旁向左轉至電子與資訊研究大樓。</li>
+                    <li style={{ marginBottom: '1rem' }}>因會場附近停車位有限，自行開車者可能需停於較遠處，再步行至會場。</li>
                     <li>於科學園區新安路的南大門進入交大校園後，到Ｔ型路口右轉，沿著主要道路行駛，過了奈米研究大樓（對面是活動中心），右轉向前沿著荷花池即可到達電子與資訊研究大樓。</li>
                 </ol>
             </section>
