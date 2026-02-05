@@ -1,7 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
   return (
     <nav style={{
       backgroundColor: 'var(--primary-color)',
@@ -16,8 +22,8 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
       </div>
 
       <ul className={`navbar-list ${isMenuOpen ? 'active' : ''}`}>
-        <li><Link to="/" onClick={closeMenu}>CMCT 2026</Link></li>
-        <li><Link to="/call-for-papers" onClick={closeMenu}>Call for Papers</Link></li>
+        <li><Link to="/" onClick={closeMenu} className={isActive('/') ? 'active-tab' : ''}>CMCT 2026</Link></li>
+        <li><Link to="/call-for-papers" onClick={closeMenu} className={isActive('/call-for-papers') ? 'active-tab' : ''}>Call for Papers</Link></li>
         {/* <li>
           <a
             href="https://theoryday-2026.github.io/Theoryday-2026"
@@ -29,16 +35,16 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
             Theory Day
           </a>
         </li> */}
-        <li><Link to="/committee" onClick={closeMenu}>Committees</Link></li>
-        <li><Link to="/important-dates" onClick={closeMenu}>Important Dates</Link></li>
+        <li><Link to="/committee" onClick={closeMenu} className={isActive('/committee') ? 'active-tab' : ''}>Committees</Link></li>
+        <li><Link to="/important-dates" onClick={closeMenu} className={isActive('/important-dates') ? 'active-tab' : ''}>Important Dates</Link></li>
         {/* <li><Link to="/accepted-papers" onClick={closeMenu}>Accepted Papers</Link></li>
         <li><Link to="/program" onClick={closeMenu}>Program</Link></li>
         <li><Link to="/keynote-speakers" onClick={closeMenu}>Keynote Speakers</Link></li> */}
-        <li><Link to="/invited-presentations" onClick={closeMenu}>Invited talks & Presentations</Link></li>
-        <li><Link to="/registration" onClick={closeMenu}>Registration</Link></li>
-        <li style={{ backgroundColor: '#348e8e' }}><Link to="/theory-day" onClick={closeMenu}>NYCU <br /> Theory Day</Link></li>
-        <li><Link to="/venue" onClick={closeMenu}>Venue & Accommodation</Link></li>
-        <li><Link to="/help-desk" onClick={closeMenu}>Help Desk</Link></li>
+        <li><Link to="/invited-presentations" onClick={closeMenu} className={isActive('/invited-presentations') ? 'active-tab' : ''}>Invited talks & Presentations</Link></li>
+        <li><Link to="/registration" onClick={closeMenu} className={isActive('/registration') ? 'active-tab' : ''}>Registration</Link></li>
+        <li style={{ backgroundColor: '#348e8e' }}><Link to="/theory-day" onClick={closeMenu} className={isActive('/theory-day') ? 'active-tab' : ''}>NYCU <br /> Theory Day</Link></li>
+        <li><Link to="/venue" onClick={closeMenu} className={isActive('/venue') ? 'active-tab' : ''}>Venue & Accommodation</Link></li>
+        <li><Link to="/help-desk" onClick={closeMenu} className={isActive('/help-desk') ? 'active-tab' : ''}>Help Desk</Link></li>
       </ul>
       <style>{`
         .navbar-mobile-toggle {
@@ -102,12 +108,16 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
           line-height: 1.2;
           box-sizing: border-box;
         }
-          .navbar-list li a.external-link {
-            background-color: #6c757d;
-          }
-          .navbar-list li a.external-link:hover {
-            background-color: #5a6268;
-          }
+        .navbar-list li a.active-tab {
+          background-color: var(--secondary-color);
+          font-weight: 700;
+        }
+        .navbar-list li a.external-link {
+          background-color: #6c757d;
+        }
+        .navbar-list li a.external-link:hover {
+          background-color: #5a6268;
+        }
         
         .navbar-list li a:hover {
           background-color: var(--secondary-color);

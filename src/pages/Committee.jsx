@@ -61,14 +61,14 @@ const Committee = () => {
             <h3 style={titleStyle}>諮詢委員</h3>
             <div style={listWrapperStyle}>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                <li style={{ ...rowStyle, gridTemplateColumns: '90px auto' }}>
-                    <span></span><span>李家同 榮譽講座教授 (清華大學、靜宜大學、暨南大學)</span>
+                <li style={rowStyle}>
+                    <span>李家同 榮譽講座教授 (清華大學)</span>
                 </li>
-                <li style={{ ...rowStyle, gridTemplateColumns: '90px auto' }}>
-                    <span></span><span>李德財 院士 (中央研究院)</span>
+                <li style={rowStyle}>
+                    <span>李德財 院士 (中央研究院)</span>
                 </li>
-                <li style={{ ...rowStyle, gridTemplateColumns: '90px auto' }}>
-                    <span></span><span>唐傳義 校長 (靜宜大學)</span>
+                <li style={rowStyle}>
+                    <span>唐傳義 校長 (靜宜大學)</span>
                 </li>
                 </ul>
             </div>
