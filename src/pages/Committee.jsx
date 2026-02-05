@@ -50,8 +50,8 @@ const Committee = () => {
             <div style={listWrapperStyle}>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={rowStyle}>
-                  <span>林奇宏</span>
-                  <span>校長</span>
+                  <span>林奇宏 校長</span>
+                  <span></span>
                   <span>(陽明交通大學)</span>
                 </li>
               </ul>
@@ -64,18 +64,18 @@ const Committee = () => {
             <div style={listWrapperStyle}>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={{ ...rowStyle, gridTemplateColumns: '80px 100px auto' }}>
-                    <span>李家同</span>
-                    <span>榮譽講座教授</span>
+                    <span>李家同 榮譽講座教授</span>
+                    <span></span>
                     <span>(清華大學、靜宜大學、暨南大學)</span>
                 </li>
                 <li style={{ ...rowStyle, gridTemplateColumns: '80px 100px auto' }}>
-                    <span>李德財</span>
-                    <span>院士</span>
+                    <span>李德財 院士</span>
+                    <span></span>
                     <span>(中央研究院)</span>
                 </li>
                 <li style={{ ...rowStyle, gridTemplateColumns: '80px 100px auto' }}>
-                    <span>唐傳義</span>
-                    <span>校長</span>
+                    <span>唐傳義 校長</span>
+                    <span></span>
                     <span>(靜宜大學)</span>
                 </li>
                 </ul>
