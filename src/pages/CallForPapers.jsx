@@ -1,21 +1,29 @@
 const CallForPapers = () => {
     return (
-        <div>
+        <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
+            {/* Header Section */}
             <h2 style={{ color: '#003366' }}>
                 Call for Papers <span style={{ fontSize: '1rem', color: '#666', fontWeight: 'normal' }}></span>
             </h2>
 
             <div style={{ marginBottom: '2rem', marginTop: '1rem' }}>
-                <p style={{ margin: '0.5rem 0', fontWeight: 'bold', fontSize: '1.1rem' }}>CMCT 2026: The 43rd Symposium on Combinatorial Mathematics and Computational Theory</p>
-                <p style={{ margin: '0.5rem 0', color: '#003366', fontWeight: '500' }}>National Yang Ming Chiao Tung University, Hsinchu, Taiwan, April 24-25, 2026</p>
+                <p style={{ margin: '0.5rem 0', fontWeight: 'bold', fontSize: '1.1rem' }}>
+                    CMCT 2026: The 43rd Symposium on Combinatorial Mathematics and Computational Theory
+                </p>
+                <p style={{ margin: '0.5rem 0', color: '#003366', fontWeight: '500' }}>
+                    National Yang Ming Chiao Tung University, Hsinchu, Taiwan, April 24-25, 2026
+                </p>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem', alignItems: 'center', textAlign: 'center' }}>
+            {/* Main Content Sections */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem', alignItems: 'center' }}>
 
-
+                {/* 1. Topics of Interest */}
                 <div style={{ width: '100%', maxWidth: '800px' }}>
                     <h3 style={{ color: '#003366', marginBottom: '1rem', textAlign: 'center' }}>Topics of Interest</h3>
-                    <p style={{ marginBottom: '1rem', fontStyle: 'italic', color: '#555' }}>Topics of interest include, but are not limited to:</p>
+                    <p style={{ marginBottom: '1rem', fontStyle: 'italic', color: '#555', textAlign: 'center' }}>
+                        Topics of interest include, but are not limited to:
+                    </p>
                     <ul style={{
                         lineHeight: '1.6',
                         paddingLeft: '0',
@@ -53,10 +61,31 @@ const CallForPapers = () => {
                     </ul>
                 </div>
 
-                <div style={{ width: '100%', maxWidth: '900px' }}>
-                    <h3 style={{ color: '#003366', marginBottom: '2rem', textAlign: 'center' }}>Submission Guidelines</h3>
+                {/* 2. Submission Guidelines */}
+                <div style={{ 
+                    width: '100%', 
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    alignItems: 'center' 
+                }}>
+                    <h3 style={{ 
+                        color: '#003366', 
+                        marginBottom: '1.5rem', 
+                        borderBottom: '1px solid #f0f0f0', 
+                        paddingBottom: '0.5rem', 
+                        width: '100%', 
+                        maxWidth: '900px', 
+                        textAlign: 'center' 
+                    }}>Submission Guidelines</h3>
 
-                    <div style={{ marginBottom: '0', color: '#333', lineHeight: '1.8', textAlign: 'center' }}>
+                    <div style={{ 
+                        width: 'fit-content', 
+                        maxWidth: '900px', 
+                        margin: '0 auto', 
+                        textAlign: 'left', 
+                        color: '#333', 
+                        lineHeight: '1.8' 
+                    }}>
                         <p style={{ margin: '0.5rem 0' }}>
                             本研討會接受論文摘要(1頁)或全文(含文獻至多6頁)投稿，論文格式請依研討會網站提供的樣版撰寫 (link)，最佳論文於全文投稿論文中選出。論文投稿請於 <strong>3/15</strong> 前，mail至 <a href="mailto:cmct2026.workshop@gmail.com" style={{ color: '#0056b3' }}>cmct2026.workshop@gmail.com</a>。
                         </p>
@@ -64,29 +93,71 @@ const CallForPapers = () => {
                             We accept 1-page abstracts or full papers (max. 6 pages including references). Please adhere to the template available on the official website (link). Only full papers are eligible for the Best Paper Award selection. Please email your files to <a href="mailto:cmct2026.workshop@gmail.com" style={{ color: '#0056b3' }}>cmct2026.workshop@gmail.com</a> before <strong>March 15</strong>, with the subject line: <code style={{ backgroundColor: '#f8f9fa', padding: '0.2rem 0.4rem', borderRadius: '4px', color: '#d63384', border: '1px solid #e9ecef' }}>[Paper-Name_Your-Name]</code>.
                         </p>
                         <p style={{ marginTop: '1rem', fontSize: '0.95rem' }}>
-                            <strong>Templates & Sample Files:</strong> Download Templates (Google Drive: Latex, Word)
+                            <strong>Templates & Sample Files:</strong>{' '}
+                            <a 
+                                href="https://drive.google.com/drive/u/3/folders/1f19T4bGqeeqj-1RzC8eHuyQOnSDNiVOv" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                style={{ color: '#0056b3', textDecoration: 'underline' }}
+                            >
+                                Download Templates (Latex, Word)
+                            </a>
                         </p>
                     </div>
                 </div>
-                <div style={{ width: '100%', maxWidth: '800px' }}>
-                    <h3 style={{ color: '#003366', marginBottom: '1rem', textAlign: 'center' }}>Important Dates</h3>
-                    <ul style={{ listStyleType: 'none', padding: 0, lineHeight: '1.8', color: '#333', textAlign: 'center' }}>
-                        <li><strong>Abstract/Full paper submission:</strong> March 15, 2026</li>
-                        <li><strong>Paper notification:</strong> April 1, 2026</li>
-                        <li><strong>Camera-ready paper due date:</strong> April 10, 2026</li>
-                        <li><strong>Conference Date:</strong> April 24-25, 2026</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div style={{ marginTop: '3rem' }}>
-                <h3 style={{ color: '#003366', marginBottom: '1rem' }}>Venue & Contact</h3>
-                <p style={{ marginBottom: '0.5rem' }}>
-                    <strong>Venue:</strong> National Yang Ming Chiao Tung University, Hsinchu, Taiwan
-                </p>
-                <p>
-                    <strong>Contact:</strong> All questions about CMCT 2026 should be emailed to <a href="mailto:cmct2026.workshop@gmail.com" style={{ color: '#0056b3' }}>cmct2026.workshop@gmail.com</a>.
-                </p>
+                {/* 3. Important Dates */}
+                <div style={{ width: '100%', maxWidth: '800px', textAlign: 'center' }}>
+                    <h3 style={{ color: '#003366', marginBottom: '1.5rem' }}>Important Dates</h3>
+                    <div style={{ 
+                        display: 'inline-grid', 
+                        gridTemplateColumns: 'auto auto', 
+                        columnGap: '1.5rem', 
+                        rowGap: '0.8rem', 
+                        textAlign: 'left', 
+                        lineHeight: '1.8', 
+                        color: '#333' 
+                    }}>
+                        <div style={{ fontWeight: 'bold' }}>Abstract/Full paper submission:</div>
+                        <div>March 15, 2026</div>
+
+                        <div style={{ fontWeight: 'bold' }}>Paper notification:</div>
+                        <div>April 2, 2026</div>
+
+                        <div style={{ fontWeight: 'bold' }}>Camera-ready paper due date:</div>
+                        <div>April 10, 2026</div>
+
+                        <div style={{ fontWeight: 'bold' }}>Conference Date:</div>
+                        <div>April 24-25, 2026</div>
+                    </div>
+                </div>
+
+                {/* 4. Venue & Contact */}
+                <div style={{ 
+                    width: '100%', 
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    alignItems: 'center' 
+                }}>
+                    <h3 style={{ 
+                        color: '#003366', 
+                        marginBottom: '1.5rem', 
+                        borderBottom: '1px solid #f0f0f0', 
+                        paddingBottom: '0.5rem', 
+                        width: '100%', 
+                        maxWidth: '900px', 
+                        textAlign: 'center' 
+                    }}>Venue & Contact</h3>
+                    
+                    <div style={{ display: 'inline-block', textAlign: 'left', maxWidth: '900px' }}>
+                        <p style={{ marginBottom: '0.5rem' }}>
+                            <strong>Venue:</strong> National Yang Ming Chiao Tung University, Hsinchu, Taiwan
+                        </p>
+                        <p>
+                            <strong>Contact:</strong> All questions about CMCT 2026 should be emailed to <a href="mailto:cmct2026.workshop@gmail.com" style={{ color: '#0056b3' }}>cmct2026.workshop@gmail.com</a>.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     );
