@@ -1,3 +1,6 @@
+import Committee from './Committee';
+import ImportantDates from './ImportantDates';
+
 const CallForPapers = () => {
     return (
         <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
@@ -115,58 +118,11 @@ const CallForPapers = () => {
                     </div>
                 </div>
 
-                {/* 3. Important Dates */}
-                <div style={{ width: '100%', maxWidth: '800px', textAlign: 'center' }}>
-                    <h3 style={{ color: '#003366', marginBottom: '1.5rem' }}>Important Dates</h3>
-                    <div style={{ 
-                        display: 'inline-grid', 
-                        gridTemplateColumns: 'auto auto', 
-                        columnGap: '1.5rem', 
-                        rowGap: '0.8rem', 
-                        textAlign: 'left', 
-                        lineHeight: '1.8', 
-                        color: '#333' 
-                    }}>
-                        <div style={{ fontWeight: 'bold' }}>Abstract/Full paper submission:</div>
-                        <div>March 15, 2026</div>
+                {/* 3. Committee Section */}
+                <Committee />
 
-                        <div style={{ fontWeight: 'bold' }}>Paper notification:</div>
-                        <div>April 2, 2026</div>
-
-                        <div style={{ fontWeight: 'bold' }}>Camera-ready paper due date:</div>
-                        <div>April 10, 2026</div>
-
-                        <div style={{ fontWeight: 'bold' }}>Conference Date:</div>
-                        <div>April 24-25, 2026</div>
-                    </div>
-                </div>
-
-                {/* 4. Venue & Contact */}
-                <div style={{ 
-                    width: '100%', 
-                    display: 'flex', 
-                    flexDirection: 'column', 
-                    alignItems: 'center' 
-                }}>
-                    <h3 style={{ 
-                        color: '#003366', 
-                        marginBottom: '1.5rem', 
-                        borderBottom: '1px solid #f0f0f0', 
-                        paddingBottom: '0.5rem', 
-                        width: '100%', 
-                        maxWidth: '900px', 
-                        textAlign: 'center' 
-                    }}>Venue & Contact</h3>
-                    
-                    <div style={{ display: 'inline-block', textAlign: 'left', maxWidth: '900px' }}>
-                        <p style={{ marginBottom: '0.5rem' }}>
-                            <strong>Venue:</strong> National Yang Ming Chiao Tung University, Hsinchu, Taiwan
-                        </p>
-                        <p>
-                            <strong>Contact:</strong> All questions about CMCT 2026 should be emailed to <a href="mailto:cmct2026.workshop@gmail.com" style={{ color: '#0056b3' }}>cmct2026.workshop@gmail.com</a>.
-                        </p>
-                    </div>
-                </div>
+                {/* 4. Important Dates Section */}
+                <ImportantDates />
             </div>
         </div>
     );

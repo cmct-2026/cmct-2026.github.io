@@ -2,7 +2,7 @@ const Committee = () => {
   // 每一行的對齊樣式 (名字、職稱、單位)
   const rowStyle = {
     display: 'grid',
-    gridTemplateColumns: '70px 70px auto', 
+    gridTemplateColumns: 'auto', 
     columnGap: '0.5rem', 
     marginBottom: '0.3rem', // 縮小行與行之間的間距
     alignItems: 'center',
@@ -11,7 +11,7 @@ const Committee = () => {
 
   // 每一組委員的容器樣式
   const sectionStyle = {
-    marginBottom: '1.5rem', // 縮小組與組之間的間距
+    marginBottom: '2.5rem', // 縮小組與組之間的間距
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
@@ -37,7 +37,7 @@ const Committee = () => {
 
   return (
     <div style={{ padding: '0 1rem' }}>
-      <h2 style={{ color: '#003366', marginBottom: '2rem', textAlign: 'center' }}>
+      <h2 style={{ color: '#003366', marginBottom: '1rem', textAlign: 'center' }}>
         Committees
       </h2>
 
@@ -50,9 +50,7 @@ const Committee = () => {
             <div style={listWrapperStyle}>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={rowStyle}>
-                  <span>林奇宏 校長</span>
-                  <span></span>
-                  <span>(陽明交通大學)</span>
+                  <span>林奇宏 校長 (陽明交通大學)</span>
                 </li>
               </ul>
             </div>
@@ -63,20 +61,14 @@ const Committee = () => {
             <h3 style={titleStyle}>諮詢委員</h3>
             <div style={listWrapperStyle}>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                <li style={{ ...rowStyle, gridTemplateColumns: '80px 100px auto' }}>
-                    <span>李家同 榮譽講座教授</span>
-                    <span></span>
-                    <span>(清華大學、靜宜大學、暨南大學)</span>
+                <li style={{ ...rowStyle, gridTemplateColumns: '90px auto' }}>
+                    <span></span><span>李家同 榮譽講座教授 (清華大學、靜宜大學、暨南大學)</span>
                 </li>
-                <li style={{ ...rowStyle, gridTemplateColumns: '80px 100px auto' }}>
-                    <span>李德財 院士</span>
-                    <span></span>
-                    <span>(中央研究院)</span>
+                <li style={{ ...rowStyle, gridTemplateColumns: '90px auto' }}>
+                    <span></span><span>李德財 院士 (中央研究院)</span>
                 </li>
-                <li style={{ ...rowStyle, gridTemplateColumns: '80px 100px auto' }}>
-                    <span>唐傳義 校長</span>
-                    <span></span>
-                    <span>(靜宜大學)</span>
+                <li style={{ ...rowStyle, gridTemplateColumns: '90px auto' }}>
+                    <span></span><span>唐傳義 校長 (靜宜大學)</span>
                 </li>
                 </ul>
             </div>
@@ -87,13 +79,13 @@ const Committee = () => {
             <h3 style={titleStyle}>指導委員</h3>
             <div style={listWrapperStyle}>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                <li style={rowStyle}><span>徐讚昇</span><span>研究員</span><span>(中央研究院)</span></li>
-                <li style={rowStyle}><span>陳健輝</span><span>教授</span><span>(臺灣大學)</span></li>
-                <li style={rowStyle}><span>廖崇碩</span><span>教授</span><span>(臺灣大學)</span></li>
-                <li style={rowStyle}><span>林耀鈴</span><span>教授</span><span>(靜宜大學)</span></li>
-                <li style={rowStyle}><span>張肇明</span><span>教授</span><span>(臺北商業大學)</span></li>
-                <li style={rowStyle}><span>彭勝龍</span><span>教授</span><span>(臺北商業大學)</span></li>
-                <li style={rowStyle}><span>楊昌彪</span><span>教授</span><span>(中山大學)</span></li>
+                <li style={rowStyle}><span>徐讚愇 研究員 (中央研究院)</span></li>
+                <li style={rowStyle}><span>陳健輝 教授 (臺灣大學)</span></li>
+                <li style={rowStyle}><span>廖崇碩 教授 (臺灣大學)</span></li>
+                <li style={rowStyle}><span>林耀鈴 教授 (靜宜大學)</span></li>
+                <li style={rowStyle}><span>張肇明 教授 (臺北商業大學)</span></li>
+                <li style={rowStyle}><span>彭勝龍 教授 (臺北商業大學)</span></li>
+                <li style={rowStyle}><span>楊昌彪 教授 (中山大學)</span></li>
               </ul>
             </div>
           </div>
@@ -103,9 +95,9 @@ const Committee = () => {
             <h3 style={titleStyle}>大會主席</h3>
             <div style={listWrapperStyle}>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                <li style={rowStyle}><span>蔡錫鈞</span><span>教授</span><span>(陽明交通大學)</span></li>
-                <li style={rowStyle}><span>林春成</span><span>院長</span><span>(陽明交通大學)</span></li>
-                <li style={rowStyle}><span>林妙聰</span><span>教授</span><span>(陽明交通大學)</span></li>
+                <li style={rowStyle}><span>蔡錫鈞 教授 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>林春成 院長 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>林妙聰 教授 (陽明交通大學)</span></li>
               </ul>
             </div>
           </div>
@@ -115,8 +107,8 @@ const Committee = () => {
             <h3 style={titleStyle}>議程主席</h3>
             <div style={listWrapperStyle}>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                <li style={rowStyle}><span>高孟駿</span><span>教授</span><span>(陽明交通大學)</span></li>
-                <li style={rowStyle}><span>陳柏安</span><span>教授</span><span>(陽明交通大學)</span></li>
+                <li style={rowStyle}><span>高孟駿 教授 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>陳柏安 教授 (陽明交通大學)</span></li>
               </ul>
             </div>
           </div>
@@ -126,9 +118,9 @@ const Committee = () => {
             <h3 style={titleStyle}>宣傳主席</h3>
             <div style={listWrapperStyle}>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                <li style={rowStyle}><span>李奇育</span><span>教授</span><span>(陽明交通大學)</span></li>
-                <li style={rowStyle}><span>蔡詩妤</span><span>助理教授</span><span>(陽明交通大學)</span></li>
-                <li style={rowStyle}><span>林政寬</span><span>副教授</span><span>(陽明交通大學)</span></li>
+                <li style={rowStyle}><span>李奇育 教授 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>林政寬 副教授 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>蔡詩妤 助理教授 (陽明交通大學)</span></li>
               </ul>
             </div>
           </div>
@@ -144,10 +136,10 @@ const Committee = () => {
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+                gridTemplateColumns: 'auto',
                 gap: '0.5rem',
                 textAlign: 'left',
-                width: '100%',
+                alignItems: 'center',
                 marginTop: '0.5rem'
               }}
             >
@@ -169,13 +161,12 @@ const Committee = () => {
                   key={name}
                   style={{
                     display: 'grid',
-                    gridTemplateColumns: '70px auto',
+                    gridTemplateColumns: 'auto',
                     columnGap: '0.4rem',
                     marginBottom: '0.2rem'
                   }}
                 >
-                  <span style={{ fontWeight: '500' }}>{name}</span>
-                  <span style={{ color: '#555' }}>({school})</span>
+                  <span style={{ fontWeight: '500' }}>{name} ({school})</span>
                 </div>
               ))}
             </div>
