@@ -24,25 +24,24 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
       <ul className={`navbar-list ${isMenuOpen ? 'active' : ''}`}>
         <li><Link to="/" onClick={closeMenu} className={isActive('/') ? 'active-tab' : ''}>CMCT 2026</Link></li>
         <li><Link to="/call-for-papers" onClick={closeMenu} className={isActive('/call-for-papers') ? 'active-tab' : ''}>Call for Papers</Link></li>
-        {/* <li>
-          <a
-            href="https://theoryday-2026.github.io/Theoryday-2026"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={closeMenu}
-            className="external-link"
-          >
-            Theory Day
-          </a>
-        </li> */}
         <li><Link to="/committee" onClick={closeMenu} className={isActive('/committee') ? 'active-tab' : ''}>Committees</Link></li>
         <li><Link to="/important-dates" onClick={closeMenu} className={isActive('/important-dates') ? 'active-tab' : ''}>Important Dates</Link></li>
         {/* <li><Link to="/accepted-papers" onClick={closeMenu}>Accepted Papers</Link></li>
         <li><Link to="/program" onClick={closeMenu}>Program</Link></li>
         <li><Link to="/keynote-speakers" onClick={closeMenu}>Keynote Speakers</Link></li> */}
-        <li><Link to="/invited-presentations" onClick={closeMenu} className={isActive('/invited-presentations') ? 'active-tab' : ''}>Invited talks & Presentations</Link></li>
+        <li><Link to="/invited-presentations" onClick={closeMenu} className={isActive('/invited-presentations') ? 'active-tab' : ''}>Invited talks</Link></li>
         <li><Link to="/registration" onClick={closeMenu} className={isActive('/registration') ? 'active-tab' : ''}>Registration</Link></li>
-        <li style={{ backgroundColor: '#348e8e' }}><Link to="/theory-day" onClick={closeMenu} className={isActive('/theory-day') ? 'active-tab' : ''}>NYCU <br /> Theory Day</Link></li>
+        <li>
+          <a
+            href="https://nycu-theory-day.github.io/2026-April/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+            className="external-link"
+          >
+            NYCU<br />Theory Day
+          </a>
+        </li>
         <li><Link to="/venue" onClick={closeMenu} className={isActive('/venue') ? 'active-tab' : ''}>Venue & Accommodation</Link></li>
         <li><Link to="/help-desk" onClick={closeMenu} className={isActive('/help-desk') ? 'active-tab' : ''}>Help Desk</Link></li>
       </ul>
@@ -113,10 +112,12 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
           font-weight: 700;
         }
         .navbar-list li a.external-link {
-          background-color: #6c757d;
+          /*background-color: #6c757d;*/
+          background-color: #348e8e;
         }
         .navbar-list li a.external-link:hover {
-          background-color: #5a6268;
+          /*background-color: #5a6268;*/
+          background-color: var(--secondary-color);
         }
         
         .navbar-list li a:hover {
