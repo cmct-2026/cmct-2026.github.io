@@ -31,18 +31,12 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
         <li><Link to="/keynote-speakers" onClick={closeMenu}>Keynote Speakers</Link></li> */}
         <li><Link to="/invited-presentations" onClick={closeMenu} className={isActive('/invited-presentations') ? 'active-tab' : ''}>Invited talks</Link></li>
         <li><Link to="/registration" onClick={closeMenu} className={isActive('/registration') ? 'active-tab' : ''}>Registration</Link></li>
-        <li>
-          <a
-            href="https://nycu-theory-day.github.io/2026-April/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={closeMenu}
-            className="external-link"
-          >
+        <li><Link to="/venue" onClick={closeMenu} className={isActive('/venue') ? 'active-tab' : ''}>Venue & Accommodation</Link></li>
+        <li><a href="https://nycu-theory-day.github.io/2026-April/"
+            target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="external-link">
             NYCU<br />Theory Day
           </a>
         </li>
-        <li><Link to="/venue" onClick={closeMenu} className={isActive('/venue') ? 'active-tab' : ''}>Venue & Accommodation</Link></li>
         <li><Link to="/help-desk" onClick={closeMenu} className={isActive('/help-desk') ? 'active-tab' : ''}>Help Desk</Link></li>
       </ul>
       <style>{`
