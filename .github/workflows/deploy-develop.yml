@@ -1,8 +1,8 @@
-name: Deploy to GitHub Pages
+name: Deploy Develop to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["develop"]
 
 permissions:
   contents: write
@@ -31,3 +31,5 @@ jobs:
         with:
           folder: dist
           branch: gh-pages
+          target-folder: dev
+          clean: false
