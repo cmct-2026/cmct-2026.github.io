@@ -103,7 +103,7 @@ const Venue = () => {
                             <strong>新竹客運 1 號（火車站 ⟶ 過溝）：</strong> 約每 10~15 分鐘一班
                         </div>
                         <div style={{ marginTop: '0.8rem' }}>
-                            <strong>先導公車(高鐵新竹站/生醫園區 ⟶ 北大橋)：</strong> 約10-40分鐘一班{' '}
+                            <strong>先導公車(生醫園區 ⟶ 北大橋)：</strong> 約10-40分鐘一班{' '}
                             <a href="https://www.taiwanbus.tw/eBUSPage/Query/QueryResult.aspx?rno=01850&rn=1735196042793&lan=C" target="_blank" rel="noopener noreferrer" style={{ color: '#0056b3', textDecoration: 'none', fontSize: '0.9em' }}>
                                 (連結)
                             </a>

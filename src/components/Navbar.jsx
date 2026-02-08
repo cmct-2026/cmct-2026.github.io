@@ -38,7 +38,7 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
         </a>
         </li>
         <li><Link to="/past-conferences" onClick={closeMenu} className={isActive('/past-conferences') ? 'active-tab' : ''}>Past Conferences</Link></li>
-        <li><Link to="/help-desk" onClick={closeMenu} className={isActive('/help-desk') ? 'active-tab' : ''}>Help Desk</Link></li>
+
       </ul>
       <style>{`
         .navbar-mobile-toggle {

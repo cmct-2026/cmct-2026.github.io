@@ -14,7 +14,7 @@ import KeynoteSpeakers from './pages/KeynoteSpeakers';
 import InvitedPresentations from './pages/InvitedPresentations';
 import TheoryDay from './pages/TheoryDay.jsx';
 import PastConferences from './pages/PastConferences';
-import HelpDesk from './pages/HelpDesk';
+
 import './App.css';
 
 import { useLocation } from 'react-router-dom';
@@ -39,7 +39,7 @@ const MainContent = () => {
         <Route path="/theory-day" element={<TheoryDay />} />
         <Route path="/venue" element={<Venue />} />
         <Route path="/past-conferences" element={<PastConferences />} />
-        <Route path="/help-desk" element={<HelpDesk />} />
+
         {/* Fallback for old routes or 404 */}
         <Route path="/news" element={<News />} />
       </Routes>
@@ -62,7 +62,7 @@ function App() {
           closeMenu={() => setIsMobileMenuOpen(false)}
         />
         <MainContent />
-        <footer style={{ textAlign: 'center', padding: '1rem', borderTop: '1px solid #eee', color: '#666', fontSize: '0.9rem' }}>
+        <footer style={{ textAlign: 'center', padding: '1rem', borderTop: 'none', color: '#666', fontSize: '0.9rem', backgroundColor: '#fff' }}>
           &copy; 2026 CMCT Conference. All rights reserved.
         </footer>
       </div>
