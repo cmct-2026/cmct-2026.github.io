@@ -43,10 +43,11 @@ const Venue = () => {
             {/* 1. 地圖區塊 */}
             <section style={sectionStyle}>
                 <p style={{ marginBottom: '1.2rem', fontSize: '1.1rem', textAlign: 'left' }}>
-                    <strong>電子資訊研究大樓 Google Map:</strong>{' '}
-                    <a href="https://goo.gl/maps/kVHCrKiHgN2m92Er8" target="_blank" rel="noopener noreferrer" style={{ color: '#0056b3', textDecoration: 'underline' }}>
-                        https://goo.gl/maps/kVHCrKiHgN2m92Er8
-                    </a>
+                    <strong>電子資訊研究大樓{' '}
+                        <a href="https://goo.gl/maps/kVHCrKiHgN2m92Er8" target="_blank" rel="noopener noreferrer" style={{ color: '#0056b3', textDecoration: 'underline' }}>
+                            Google Map
+                        </a>
+                    </strong>
                 </p>
                 <div style={{ width: '100%', overflow: 'hidden', borderRadius: '4px', border: '1px solid #eee' }}>
                     <img src="/campus_map.png" alt="NYCU Campus Map" style={{ width: '100%', height: 'auto', display: 'block' }} />
@@ -117,14 +118,17 @@ const Venue = () => {
                     textAlign: 'left'
                 }}>
                     {[
-                        "新竹老爺酒店 (Hotel Royal Hsinchu)",
-                        "EPISODE 新竹伊普索凱悅尚選酒店",
-                        "和選旅 THE HO HOTEL",
-                        "老爺商務旅館 (Royal Inn)",
-                        "新竹元首經典旅館 (Chief Hotel)"
+                        { name: "新竹老爺酒店 (Hotel Royal Hsinchu)", link: "https://www.hotelroyal.com.tw/zh-tw/hsinchu/" },
+                        { name: "EPISODE 新竹伊普索凱悅尚選酒店", link: "https://www.hyatt.com/jdv-by-hyatt/zh-HK/hsujd-episode-hsinchu" },
+                        { name: "和選旅 THE HO HOTEL", link: "https://www.thehohotel.com.tw/" },
+                        { name: "老爺商務旅館 (Royal Inn)", link: "https://www.booking-owlnest.com/royalhotel?adult=1&child=0&infant=0&lang=zh_TW" },
+                        { name: "新竹元首經典旅館 (Chief Hotel)", link: "https://www.google.com/search?q=%E6%96%B0%E7%AB%B9%E5%85%83%E9%A6%96%E7%B6%93%E5%85%B8%E6%97%85%E9%A4%A8+(Chief+Hotel)&rlz=1C5CHFA_enTW985TW985&oq=%E6%96%B0%E7%AB%B9%E5%85%83%E9%A6%96%E7%B6%93%E5%85%B8%E6%97%85%E9%A4%A8+(Chief+Hotel)&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzUzNGowajSoAgCwAgA&sourceid=chrome&ie=UTF-8" }
                     ].map((hotel, index) => (
                         <li key={index} style={{ padding: '0.5rem 0', borderBottom: '1px inset #f9f9f9', fontWeight: '500' }}>
-                            • {hotel}
+                            • {hotel.name}
+                            <a href={hotel.link} target="_blank" rel="noopener noreferrer" style={{ marginLeft: '0.5rem', color: '#0056b3', textDecoration: 'none', fontSize: '0.9em' }}>
+                                (連結)
+                            </a>
                         </li>
                     ))}
                 </ul>
