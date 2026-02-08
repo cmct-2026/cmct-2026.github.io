@@ -33,10 +33,11 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
         <li><Link to="/registration" onClick={closeMenu} className={isActive('/registration') ? 'active-tab' : ''}>Registration</Link></li>
         <li><Link to="/venue" onClick={closeMenu} className={isActive('/venue') ? 'active-tab' : ''}>Venue & Accommodation</Link></li>
         <li><a href="https://nycu-theory-day.github.io/2026-April/"
-            target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="external-link">
-            NYCU<br />Theory Day
-          </a>
+          target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="external-link">
+          NYCU<br />Theory Day
+        </a>
         </li>
+        <li><Link to="/past-conferences" onClick={closeMenu} className={isActive('/past-conferences') ? 'active-tab' : ''}>Past Conferences</Link></li>
         <li><Link to="/help-desk" onClick={closeMenu} className={isActive('/help-desk') ? 'active-tab' : ''}>Help Desk</Link></li>
       </ul>
       <style>{`

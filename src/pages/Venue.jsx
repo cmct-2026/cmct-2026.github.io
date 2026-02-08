@@ -2,8 +2,9 @@ import React from 'react';
 
 const Venue = () => {
     const sectionStyle = {
-        marginBottom: '3.5rem',
-        width: '100%'
+        width: '100%',
+        maxWidth: '900px',
+        margin: '0 auto 3.5rem auto'
     };
 
     const sectionTitleStyle = {
@@ -36,8 +37,8 @@ const Venue = () => {
     };
 
     return (
-        <div style={{ padding: '2rem', maxWidth: '900px', margin: '0 auto', fontFamily: 'sans-serif', color: '#444' }}>
-            <h2 style={{ color: '#003366', fontSize: '2.2rem', marginBottom: '2.5rem', textAlign: 'center' }}>Venue and Accommodation</h2>
+        <div style={{ padding: '0rem', fontFamily: 'sans-serif', color: '#444' }}>
+            <h2 style={{ color: '#003366', marginBottom: '2.5rem' }}>Venue and Accommodation</h2>
 
             {/* 1. 地圖區塊 */}
             <section style={sectionStyle}>
@@ -107,11 +108,11 @@ const Venue = () => {
             {/* 3. 住宿資訊區塊 */}
             <section style={sectionStyle}>
                 <h3 style={sectionTitleStyle}>住宿資訊</h3>
-                <ul style={{ 
-                    listStyleType: 'none', 
-                    padding: 0, 
-                    display: 'grid', 
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+                <ul style={{
+                    listStyleType: 'none',
+                    padding: 0,
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
                     gap: '1rem',
                     textAlign: 'left'
                 }}>
@@ -132,11 +133,11 @@ const Venue = () => {
             {/* 4. 備註區塊 */}
             <section style={{ ...sectionStyle, marginBottom: '0' }}>
                 <h3 style={sectionTitleStyle}>備註</h3>
-                <ol style={{ 
-                    paddingLeft: '1.5rem', 
-                    lineHeight: '2', 
-                    textAlign: 'left', 
-                    margin: 0 
+                <ol style={{
+                    paddingLeft: '1.5rem',
+                    lineHeight: '2',
+                    textAlign: 'left',
+                    margin: 0
                 }}>
                     <li style={{ marginBottom: '1rem' }}>於大學路的北大門進入交大校園後，通過大門警衛室後需<strong>「立即」左轉</strong>，沿著竹湖行約三百公尺，於左手邊的荷花池旁向左轉至電子與資訊研究大樓。</li>
                     <li style={{ marginBottom: '1rem' }}>因會場附近停車位有限，自行開車者可能需停於較遠處，再步行至會場。</li>

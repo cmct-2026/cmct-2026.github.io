@@ -13,6 +13,7 @@ import AcceptedPapers from './pages/AcceptedPapers';
 import KeynoteSpeakers from './pages/KeynoteSpeakers';
 import InvitedPresentations from './pages/InvitedPresentations';
 import TheoryDay from './pages/TheoryDay.jsx';
+import PastConferences from './pages/PastConferences';
 import HelpDesk from './pages/HelpDesk';
 import './App.css';
 
@@ -37,6 +38,7 @@ const MainContent = () => {
         <Route path="/registration" element={<Registration />} />
         <Route path="/theory-day" element={<TheoryDay />} />
         <Route path="/venue" element={<Venue />} />
+        <Route path="/past-conferences" element={<PastConferences />} />
         <Route path="/help-desk" element={<HelpDesk />} />
         {/* Fallback for old routes or 404 */}
         <Route path="/news" element={<News />} />
