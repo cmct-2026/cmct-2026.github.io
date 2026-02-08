@@ -40,10 +40,10 @@ const PastConferences = () => {
         { id: 36, date: '2019/5/24~5/25', host: '交通大學資訊工程學系、工業工程與管理學系', organizers: '蔡錫鈞、林春成' },
         { id: 37, date: '2020/7/29~7/30', host: '高雄科技大學商務資訊應用系、航運管理系', organizers: '黃國璽、曾國尊' },
         { id: 38, date: '2021/5/14~5/15', host: '臺灣師範大學資訊工程學系', organizers: '王弘倫、陳彥宏、張家銘' },
-        { id: 39, date: 'TBD', host: 'TBD', organizers: 'TBD' },
-        { id: 40, date: 'TBD', host: 'TBD', organizers: 'TBD' },
-        { id: 41, date: 'TBD', host: 'TBD', organizers: 'TBD' },
-        { id: 42, date: 'TBD', host: 'TBD', organizers: 'TBD' }
+        { id: 39, date: '2022/6/24~6/25', host: '政治大學資訊科學系', organizers: '張家銘、陳彥宏、王弘倫', link: 'https://cmct2022.weebly.com/', proceedings: 'https://www.dropbox.com/s/c5115hmhz1id8b6/CMCT2022_proceeding_v11_resize.pdf?dl=0' },
+        { id: 40, date: '2023/5/19~20', host: '臺北商業技術學院創意科技與產品設計系', organizers: '彭勝龍、洪綾珠、李佳衛', link: 'https://cmct2023.ntub.edu.tw' },
+        { id: 41, date: '2024/5/17~18', host: '臺北市立大學資訊科學系', organizers: '李佳衛、陳彥宏', link: 'https://cmct2023.ntub.edu.tw' },
+        { id: 42, date: '2025/5/9~10', host: '臺北科技大學資訊工程學系', organizers: '劉傳銘', link: 'https://cmct-2025.github.io/' }
     ];
 
     const thStyle = {
