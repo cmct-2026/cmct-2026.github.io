@@ -14,6 +14,7 @@ const Home = () => {
             <div style={{ padding: '2rem 2rem 0 2rem' }}>
                 <h2 style={{ color: '#003366' }}>Welcome to CMCT 2026</h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', textAlign: 'justify' }}>
+                    
                     <p>
                         The Combinatorial Mathematics and Computational Theory Symposium is an annual event, hosted in rotation by universities or Academia Sinica, and now entering its 43rd iteration as the foremost academic gathering in Taiwan’s “Algorithms and Computational Theory” community. Offering a platform for the presentation of cutting-edge fundamental and applied research, the symposium draws upon diverse fields including combinatorial mathematics, discrete mathematics, computational theory, algorithms, bioinformatics, and network computing, thereby fostering vibrant scholarly exchange and collaboration. Over its 42 previous sessions—spanning two-fifths of a century—the symposium has significantly advanced academic standards and contributed to the sustained development of algorithms and computational theory in Taiwan.
                         <br /><br />
