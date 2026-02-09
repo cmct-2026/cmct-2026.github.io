@@ -7,6 +7,7 @@ import organizer2 from '../assets/organizer_2.png';
 import coOrganizerEtpc from '../assets/co_organizer_etpc.png';
 import coOrganizerIis from '../assets/co_organizer_iis.png';
 
+
 const Home = () => {
     return (
         <div>
