@@ -65,7 +65,15 @@ const PastConferences = () => {
 
     return (
         <div style={{ padding: '0rem', fontFamily: 'sans-serif' }}>
-            <h2 style={{ color: '#003366', marginBottom: '2.5rem' }}>Past Conferences</h2>
+            <div style={{ marginTop: '1rem', textAlign: 'center', color: '#666' }}>
+                <h2 style={{ color: '#003366', marginBottom: '2.5rem' }}>
+                組合數學與計算理論研討會 - <a href="https://par.cse.nsysu.edu.tw/~algo/index.htm" target="_blank" rel="noopener noreferrer"
+                    style={{ color: '#0056b3', textDecoration: 'none' }}>
+                    歷屆論文集與主辦單位 
+                </a>
+                &nbsp; (資料由 <a href="mailto:cbyang@cse.nsysu.edu.tw" style={{ color: '#0056b3', textDecoration: 'none' }}>楊昌彪教授</a> 維護提供)
+                </h2>
+            </div>
 
             <div style={{ padding: '0 1rem 2rem 1rem', overflowX: 'auto' }}>
                 <table style={{
@@ -117,12 +125,6 @@ const PastConferences = () => {
                         ))}
                     </tbody>
                 </table>
-            </div>
-            <div style={{ marginTop: '1rem', textAlign: 'center', fontSize: '0.9rem', color: '#666' }}>
-                Credit: <a href="https://par.cse.nsysu.edu.tw/~algo/index.htm" target="_blank" rel="noopener noreferrer"
-                    style={{ color: '#0056b3', textDecoration: 'none' }}>
-                    Workshop on Combinatorial Mathematics and Computation Theory Website (楊昌彪教授)
-                </a>
             </div>
         </div>
     );
