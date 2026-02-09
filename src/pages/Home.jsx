@@ -1,5 +1,7 @@
 import Banner from '../components/Banner';
 import NewsTimeline from '../components/NewsTimeline';
+import ImportantDates from './ImportantDates';
+import HelpDesk from './HelpDesk';
 import organizer1 from '../assets/organizer_1.png';
 import organizer2 from '../assets/organizer_2.png';
 import coOrganizerEtpc from '../assets/co_organizer_etpc.png';
@@ -25,67 +27,28 @@ const Home = () => {
                     </p>
                 </div>
 
-                <NewsTimeline />
+                <p style={{ marginBottom: '2.5rem' }}></p>
 
-                {/* Important Dates */}
-                <div style={{ marginTop: '4rem', marginBottom: '1rem' }}>
-                    <h3 style={{ color: '#003366', fontSize: '1.5rem', marginBottom: '1.5rem', textAlign: 'center', fontWeight: 'bold' }}>Important Dates</h3>
-                    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 1rem' }}>
-                        <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                            <li style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.8rem', borderBottom: '1px solid #eee', paddingBottom: '0.5rem' }}>
-                                <span style={{ fontWeight: 'bold', color: '#333', textAlign: 'left', marginRight: '1rem', fontSize: '1rem' }}>Abstract/Full paper submission</span>
-                                <span style={{ color: '#000', fontWeight: '500', textAlign: 'right' }}>March 15, 2026</span>
-                            </li>
-                            <li style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.8rem', borderBottom: '1px solid #eee', paddingBottom: '0.5rem' }}>
-                                <span style={{ fontWeight: 'bold', color: '#333', textAlign: 'left', marginRight: '1rem', fontSize: '1rem' }}>Paper notification</span>
-                                <span style={{ color: '#000', fontWeight: '500', textAlign: 'right' }}>April 2, 2026</span>
-                            </li>
-                            <li style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.8rem', borderBottom: '1px solid #eee', paddingBottom: '0.5rem' }}>
-                                <span style={{ fontWeight: 'bold', color: '#333', textAlign: 'left', marginRight: '1rem', fontSize: '1rem' }}>Camera-ready paper due date</span>
-                                <span style={{ color: '#000', fontWeight: '500', textAlign: 'right' }}>April 10, 2026</span>
-                            </li>
-                            <li style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.5rem 0' }}>
-                                <span style={{ fontWeight: 'bold', color: '#333', textAlign: 'left', marginRight: '1rem', fontSize: '1rem' }}>Conference Date</span>
-                                <span style={{ color: '#000', fontWeight: '700', fontSize: '1.1rem', textAlign: 'right' }}>April 24-25, 2026</span>
-                            </li>
-                        </ul>
+                {/* Two-column layout for ImportantDates and NewsTimeline */}
+                <div style={{ 
+                    display: 'flex', 
+                    gap: '3rem',
+                    marginBottom: '1.5rem',
+                    flexWrap: 'wrap'
+                }}>
+                    <div style={{ flex: '1 1 400px', minWidth: '300px' }}>
+                        <NewsTimeline />
+                    </div>
+                    <div style={{ flex: '1 1 400px', minWidth: '300px' }}>
+                        <ImportantDates />
                     </div>
                 </div>
 
-            </div>
+                <HelpDesk />
 
-            <div style={{ padding: '2rem 0', fontSize: '0.9rem', color: '#555', textAlign: 'center', borderTop: '0px solid #eee' }}>
-                <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+                <p style={{ marginBottom: '3.5rem' }}></p>
+                <br />
 
-                    {/* Help Desk */}
-                    <div style={{ textAlign: 'center' }}>
-                        <h2 style={{ color: '#003366', marginBottom: '0.5rem', fontWeight: 'bold' }}>HELP DESK</h2>
-                        <a href="mailto:cmct2026.workshop@gmail.com" style={{
-                            color: '#0056b3',
-                            textDecoration: 'none',
-                            fontWeight: '600',
-                            fontSize: '1rem'
-                        }}>
-                            cmct2026.workshop@gmail.com
-                        </a>
-                    </div>
-
-                    {/* Contact Persons */}
-                    <div style={{ textAlign: 'center' }}>
-                        <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                            <div style={{ minWidth: '300px' }}>
-                                <div style={{ color: '#333', fontWeight: '700', fontSize: '0.95rem' }}>Prof. Mong-Jen Kao</div>
-                                <div style={{ fontSize: '0.8rem', color: '#666' }}>Dept. of CS, NYCU</div>
-                                <a href="mailto:mjkao@cs.nycu.edu.tw" style={{ color: '#0056b3', fontSize: '0.85rem', textDecoration: 'none' }}>mjkao@cs.nycu.edu.tw</a>
-                            </div>
-                            <div style={{ minWidth: '300px' }}>
-                                <div style={{ color: '#333', fontWeight: '700', fontSize: '0.95rem' }}>Prof. Po-An Chen</div>
-                                <div style={{ fontSize: '0.8rem', color: '#666' }}>Inst. of IM, NYCU</div>
-                                <a href="mailto:poanchen@nycu.edu.tw" style={{ color: '#0056b3', fontSize: '0.85rem', textDecoration: 'none' }}>poanchen@nycu.edu.tw</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     );

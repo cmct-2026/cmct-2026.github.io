@@ -37,7 +37,7 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
           NYCU<br />Theory Day
         </a>
         </li>
-        <li><Link to="/past-conferences" onClick={closeMenu} className={isActive('/past-conferences') ? 'active-tab' : ''}>Past Conferences</Link></li>
+        <li><Link to="/past-conferences" onClick={closeMenu} className={isActive('/past-conferences') ? 'active-tab' : ''}>Past <br />Workshops</Link></li>
 
       </ul>
       <style>{`
