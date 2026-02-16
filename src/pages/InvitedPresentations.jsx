@@ -1,6 +1,10 @@
 
 import { useState } from 'react';
 
+import sunYuanHsiehImg from '../assets/speakers/sun-yuan-hsieh.jpg';
+import haoTsungYangImg from '../assets/speakers/hao-tsung-yang.jpg';
+import yaChunLiangImg from '../assets/speakers/ya-chun-liang.jpg';
+
 const SpeakerItem = ({ speaker }) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -105,7 +109,7 @@ const InvitedPresentations = () => {
                 title: "Chair Professor & Dean of International Affairs",
                 affiliation: "National Cheng Kung University, Department of Computer Science and Information Engineering (國立成功大學資訊工程學系)",
                 email: "hsiehsy@mail.ncku.edu.tw",
-                photo: "/speakers/sun-yuan-hsieh.jpg",
+                photo: sunYuanHsiehImg,
                 type: "Keynote Speaker",
                 abstract: "To be announced."
             }
@@ -116,7 +120,7 @@ const InvitedPresentations = () => {
                 title: "Assistant Professor",
                 affiliation: "National Central University, Department of Computer Science and Information Engineering (國立中央大學資訊工程學系)",
                 email: "htyang@ncu.edu.tw",
-                photo: "/speakers/hao-tsung-yang.jpg", // Placeholder until user provides file
+                photo: haoTsungYangImg, // Placeholder until user provides file
                 type: "Invited Speaker",
                 abstract: "To be announced."
             },
@@ -125,7 +129,7 @@ const InvitedPresentations = () => {
                 title: "Assistant Professor",
                 affiliation: "National Tsing Hua University, Department of Computer Science and Information Engineering (國立清華大學資訊工程學系)",
                 email: "ycliang@cs.nthu.edu.tw",
-                photo: "/speakers/ya-chun-liang.jpg", // Placeholder until user provides file
+                photo: yaChunLiangImg, // Placeholder until user provides file
                 type: "Invited Speaker",
                 abstract: "To be announced."
             }
