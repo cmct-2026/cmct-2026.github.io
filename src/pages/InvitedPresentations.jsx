@@ -10,13 +10,8 @@ const SpeakerItem = ({ speaker }) => {
             borderBottom: '1px solid #eee',
             paddingBottom: '30px'
         }}>
-            <div style={{
-                display: 'flex',
-                alignItems: 'start',
-                gap: '30px',
-                flexWrap: 'wrap' // Allow wrapping on small screens
-            }}>
-                <div style={{ flexShrink: 0 }}>
+            <div className="speaker-item" style={{ borderBottom: "none", marginBottom: 0, paddingBottom: 0 }}>
+                <div className="speaker-photo">
                     <img
                         src={speaker.photo}
                         alt={speaker.name}
@@ -29,7 +24,7 @@ const SpeakerItem = ({ speaker }) => {
                         }}
                     />
                 </div>
-                <div style={{ flex: 1, minWidth: '300px' }}>
+                <div className="speaker-text">
                     <h3 style={{ color: '#003366', marginBottom: '8px', marginTop: '0', fontSize: '1.4rem', fontWeight: '600' }}>{speaker.name}</h3>
                     <p style={{ fontWeight: '500', color: '#555', marginBottom: '4px', fontSize: '1rem' }}>{speaker.title}</p>
                     <p style={{ marginBottom: '8px', color: '#666', fontSize: '0.95rem' }}>{speaker.affiliation}</p>
