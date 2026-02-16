@@ -1,11 +1,32 @@
-
 const Registration = () => {
     return (
-        <div>
-            <h2 style={{ color: '#003366' }}>Registration</h2>
-            <div style={{ maxWidth: '800px', margin: '0 auto', padding: '40px 20px' }}>
+        <div style={{ padding: '40px 20px', fontFamily: 'sans-serif' }}>
+            <div style={{ 
+                maxWidth: '800px', 
+                margin: '0 auto', 
+                textAlign: 'left' 
+            }}>
+                <h2 style={{ color: '#003366', textAlign: 'center', marginBottom: '10px' }}>Registration</h2>
+                
+                <div style={{ 
+                    textAlign: 'center', 
+                    marginBottom: '40px', 
+                    padding: '20px', 
+                    backgroundColor: '#f0f4f8',
+                    borderLeft: '5px solid #003366',
+                    borderRadius: '4px',
+                    width: '100%',
+                    boxSizing: 'border-box'
+                }}>
+                    <p style={{ margin: 0, fontSize: '1.1rem', color: '#003366', fontWeight: 'bold' }}>
+                        Registration Period: March 16 – April 10, 23:59
+                    </p>
+                    <p style={{ margin: '5px 0 0 0', fontSize: '1rem', color: '#003366', fontWeight: 'bold' }}>
+                        報名時間：3月16日至4月10日 23:59
+                    </p>
+                </div>
+
                 <div style={{ marginBottom: '50px' }}>
-                    {/* General Registration */}
                     <div style={{
                         borderBottom: '1px solid #eee',
                         paddingBottom: '25px',
@@ -24,7 +45,6 @@ const Registration = () => {
                         </div>
                     </div>
 
-                    {/* Student Registration */}
                     <div style={{ paddingBottom: '25px', marginBottom: '25px' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '10px' }}>
                             <h3 style={{ margin: '0 0 10px 0', color: '#333', fontSize: '1.25rem' }}>
@@ -53,7 +73,7 @@ const Registration = () => {
                             padding: '12px 30px',
                             fontSize: '1rem',
                             textDecoration: 'none',
-                            borderRadius: '30px', // Pill shape
+                            borderRadius: '30px',
                             fontWeight: '600',
                             letterSpacing: '0.5px',
                             transition: 'all 0.3s ease',
@@ -61,14 +81,14 @@ const Registration = () => {
                             boxShadow: '0 4px 6px rgba(0, 51, 102, 0.2)'
                         }}
                         onMouseOver={(e) => {
-                            e.target.style.backgroundColor = '#002244';
-                            e.target.style.transform = 'translateY(-2px)';
-                            e.target.style.boxShadow = '0 6px 12px rgba(0, 51, 102, 0.3)';
+                            e.currentTarget.style.backgroundColor = '#002244';
+                            e.currentTarget.style.transform = 'translateY(-2px)';
+                            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0, 51, 102, 0.3)';
                         }}
                         onMouseOut={(e) => {
-                            e.target.style.backgroundColor = '#003366';
-                            e.target.style.transform = 'translateY(0)';
-                            e.target.style.boxShadow = '0 4px 6px rgba(0, 51, 102, 0.2)';
+                            e.currentTarget.style.backgroundColor = '#003366';
+                            e.currentTarget.style.transform = 'translateY(0)';
+                            e.currentTarget.style.boxShadow = '0 4px 6px rgba(0, 51, 102, 0.2)';
                         }}
                     >
                         Go to Registration Form

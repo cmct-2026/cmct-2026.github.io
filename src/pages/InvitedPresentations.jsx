@@ -1,185 +1,188 @@
-
 import { useState } from 'react';
 
 import sunYuanHsiehImg from '../assets/speakers/sun-yuan-hsieh.jpg';
 import haoTsungYangImg from '../assets/speakers/hao-tsung-yang.jpg';
 import yaChunLiangImg from '../assets/speakers/ya-chun-liang.jpg';
 
-const SpeakerItem = ({ speaker }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    return (
-        <div style={{
-            marginBottom: '40px',
-            borderBottom: '1px solid #eee',
-            paddingBottom: '30px'
-        }}>
-            <div className="speaker-item" style={{ borderBottom: "none", marginBottom: 0, paddingBottom: 0 }}>
-                <div className="speaker-photo">
-                    <img
-                        src={speaker.photo}
-                        alt={speaker.name}
-                        style={{
-                            width: '150px',
-                            height: '150px',
-                            objectFit: 'cover',
-                            backgroundColor: '#f0f0f0',
-                            borderRadius: '4px' // Subtle rounding
-                        }}
-                    />
-                </div>
-                <div className="speaker-text">
-                    <h3 style={{ color: '#003366', marginBottom: '8px', marginTop: '0', fontSize: '1.4rem', fontWeight: '600' }}>{speaker.name}</h3>
-                    <p style={{ fontWeight: '500', color: '#555', marginBottom: '4px', fontSize: '1rem' }}>{speaker.title}</p>
-                    <p style={{ marginBottom: '8px', color: '#666', fontSize: '0.95rem' }}>{speaker.affiliation}</p>
-                    <p style={{ marginBottom: '15px' }}><a href={`mailto:${speaker.email}`} style={{ color: '#003366', textDecoration: 'none', borderBottom: '1px dotted #003366' }}>{speaker.email}</a></p>
-
-                    <button
-                        onClick={() => setIsOpen(!isOpen)}
-                        style={{
-                            background: 'transparent',
-                            border: '1px solid #003366',
-                            color: '#003366',
-                            cursor: 'pointer',
-                            padding: '8px 16px',
-                            fontSize: '0.85rem',
-                            borderRadius: '20px', // Pill shape
-                            transition: 'all 0.3s ease',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '8px',
-                            outline: 'none',
-                            fontWeight: '500',
-                            letterSpacing: '0.5px'
-                        }}
-                        onMouseOver={(e) => {
-                            e.currentTarget.style.backgroundColor = '#003366';
-                            e.currentTarget.style.color = '#fff';
-                        }}
-                        onMouseOut={(e) => {
-                            e.currentTarget.style.backgroundColor = 'transparent';
-                            e.currentTarget.style.color = '#003366';
-                        }}
-                    >
-                        {isOpen ? 'Close Bio' : 'Read Bio'}
-                        <span style={{
-                            display: 'inline-block',
-                            transition: 'transform 0.3s ease',
-                            transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-                            fontSize: '0.8rem'
-                        }}>▼</span>
-                    </button>
-                </div>
-            </div>
-
-            <div style={{
-                maxHeight: isOpen ? '1000px' : '0',
-                overflow: 'hidden',
-                transition: 'max-height 0.5s ease-in-out, opacity 0.5s ease-in-out',
-                opacity: isOpen ? 1 : 0,
-                marginTop: isOpen ? '20px' : '0'
-            }}>
-                <div className="speaker-bio">
-                    <h4 style={{
-                        marginTop: '0',
-                        marginBottom: '15px',
-                        color: '#003366',
-                        fontSize: '1.1rem',
-                        textTransform: 'uppercase',
-                        letterSpacing: '1px',
-                        fontWeight: '600'
-                    }}>
-                        Speaker Bio / Abstract
-                    </h4>
-                    <p style={{ margin: 0 }}>
-                        {speaker.abstract || "Detailed introduction and abstract to be announced soon."}
-                    </p>
-                </div>
-            </div>
-        </div>
-    );
-};
-
 const InvitedPresentations = () => {
-    // Speaker data
-    const speakers = {
-        keynote: [
-            {
-                name: "謝孫源 教授 / Prof. Sun-Yuan Hsieh",
-                title: "Chair Professor & Dean of International Affairs",
-                affiliation: "National Cheng Kung University, Department of Computer Science and Information Engineering (國立成功大學資訊工程學系)",
-                email: "hsiehsy@mail.ncku.edu.tw",
-                photo: sunYuanHsiehImg,
-                type: "Keynote Speaker",
-                abstract: "To be announced."
-            }
-        ],
-        invited: [
-            {
-                name: "楊皓琮 教授 / Prof. Hao-Tsung Yang",
-                title: "Assistant Professor",
-                affiliation: "National Central University, Department of Computer Science and Information Engineering (國立中央大學資訊工程學系)",
-                email: "htyang@ncu.edu.tw",
-                photo: haoTsungYangImg, // Placeholder until user provides file
-                type: "Invited Speaker",
-                abstract: "To be announced."
-            },
-            {
-                name: "梁雅鈞 教授 / Prof. Ya-Chun Liang",
-                title: "Assistant Professor",
-                affiliation: "National Tsing Hua University, Department of Computer Science and Information Engineering (國立清華大學資訊工程學系)",
-                email: "ycliang@cs.nthu.edu.tw",
-                photo: yaChunLiangImg, // Placeholder until user provides file
-                type: "Invited Speaker",
-                abstract: "To be announced."
-            }
-        ]
-    };
+    const allSpeakers = [
+        {
+            id: 'hsieh',
+            name: "謝孫源 教授 / Prof. Sun-Yuan Hsieh",
+            tabTitle: "謝孫源 教授",
+            title: "講座教授 兼 國際長 / Chair Professor & Dean of International Affairs",
+            affiliation: "國立成功大學 資訊工程學系\nDepartment of Computer Science and Information Engineering, NCKU",
+            email: "hsiehsy@mail.ncku.edu.tw",
+            photo: sunYuanHsiehImg,
+            type: "Keynote Speaker",
+            abstract: "To be announced."
+        },
+        {
+            id: 'yang',
+            name: "楊皓琮 助理教授 / Prof. Hao-Tsung Yang",
+            tabTitle: "楊皓琮 助理教授",
+            title: "助理教授 / Assistant Professor",
+            affiliation: "國立中央大學 資訊工程學系\nDepartment of Computer Science and Information Engineering, NCU",
+            email: "htyang@ncu.edu.tw",
+            photo: haoTsungYangImg,
+            type: "Invited Speaker",
+            abstract: "To be announced."
+        },
+        {
+            id: 'liang',
+            name: "梁雅鈞 助理教授 / Prof. Ya-Chun Liang",
+            tabTitle: "梁雅鈞 助理教授",
+            title: "助理教授 / Assistant Professor",
+            affiliation: "國立清華大學 資訊工程學系\nDepartment of Computer Science and Information Engineering, NTHU",
+            email: "ycliang@cs.nthu.edu.tw",
+            photo: yaChunLiangImg,
+            type: "Invited Speaker",
+            abstract: "To be announced."
+        }
+    ];
+
+    const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <div>
-            <h2 style={{ color: '#003366' }}>Invited Talks & Presentations</h2>
+        <div style={{ padding: '40px 20px', fontFamily: 'sans-serif', color: '#333' }}>
+            <h2 style={{ color: '#003366', textAlign: 'center', marginBottom: '40px' }}>Invited Talks & Presentations</h2>
 
-            <div style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 20px' }}>
-                <section style={{ marginBottom: '80px' }}>
-                    <h3 style={{
-                        color: '#003366',
-                        borderBottom: '2px solid #e0e0e0',
-                        paddingBottom: '15px',
-                        marginBottom: '40px',
-                        fontSize: '1.6rem',
-                        textAlign: 'left',
-                        fontWeight: '300',
-                        letterSpacing: '1px'
-                    }}>
-                        <span style={{ fontWeight: '600' }}>Keynote</span> Speaker
-                    </h3>
-                    {speakers.keynote.map((speaker, index) => (
-                        <SpeakerItem key={index} speaker={speaker} />
+            <div style={{ maxWidth: '950px', margin: '0 auto' }}>
+                
+                {/* Tabs 導覽列 */}
+                <div style={{ 
+                    display: 'flex', 
+                    borderBottom: '1px solid #eee', 
+                    marginBottom: '40px',
+                    overflowX: 'auto',
+                    gap: '10px'
+                }}>
+                    {allSpeakers.map((speaker, index) => (
+                        <button
+                            key={speaker.id}
+                            onClick={() => setActiveTab(index)}
+                            style={{
+                                padding: '15px 25px',
+                                border: 'none',
+                                background: activeTab === index ? '#f8fafc' : 'none',
+                                cursor: 'pointer',
+                                textAlign: 'center',
+                                minWidth: '180px',
+                                borderBottom: activeTab === index ? '4px solid #003366' : '4px solid transparent',
+                                transition: 'all 0.2s ease',
+                                borderRadius: '8px 8px 0 0',
+                                fontSize: '1rem',
+                                fontWeight: activeTab === index ? '700' : '500',
+                                color: activeTab === index ? '#003366' : '#666',
+                                outline: 'none'
+                            }}
+                        >
+                            {speaker.tabTitle}
+                        </button>
                     ))}
-                </section>
+                </div>
 
-                <section>
-                    <h3 style={{
-                        color: '#003366',
-                        borderBottom: '2px solid #e0e0e0',
-                        paddingBottom: '15px',
-                        marginBottom: '40px',
-                        fontSize: '1.6rem',
-                        textAlign: 'left',
-                        fontWeight: '300',
-                        letterSpacing: '1px'
-                    }}>
-                        <span style={{ fontWeight: '600' }}>Invited</span> Speakers
-                    </h3>
-                    {speakers.invited.map((speaker, index) => (
-                        <SpeakerItem key={index} speaker={speaker} />
-                    ))}
-                </section>
+                {/* 內容展示區 */}
+                <div style={{ 
+                    display: 'flex', 
+                    flexWrap: 'wrap', 
+                    gap: '40px',
+                    alignItems: 'flex-start'
+                }}>
+                    
+                    {/* 左側照片區 */}
+                    <div style={{ flex: '0 0 220px' }}>
+                        <img
+                            src={allSpeakers[activeTab].photo}
+                            alt={allSpeakers[activeTab].name}
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                                aspectRatio: '3/4',
+                                objectFit: 'cover',
+                                borderRadius: '12px',
+                                backgroundColor: '#f5f5f5',
+                                boxShadow: '0 10px 20px rgba(0,0,0,0.08)'
+                            }}
+                        />
+                    </div>
+
+                    {/* 右側文字區 */}
+                    <div style={{ flex: '1 1 450px', textAlign: 'left' }}>
+                        <div style={{ 
+                            color: '#003366', 
+                            fontSize: '0.9rem', 
+                            fontWeight: '700', 
+                            letterSpacing: '1.5px',
+                            textTransform: 'uppercase',
+                            marginBottom: '12px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px'
+                        }}>
+                            <span style={{ width: '20px', height: '2px', backgroundColor: '#003366' }}></span>
+                            {allSpeakers[activeTab].type}
+                        </div>
+
+                        <h3 style={{ 
+                            margin: '0 0 15px 0', 
+                            color: '#1a1a1a', 
+                            fontSize: '1.8rem',
+                            fontWeight: '800'
+                        }}>
+                            {allSpeakers[activeTab].name}
+                        </h3>
+                        
+                        <div style={{ marginBottom: '25px' }}>
+                            <p style={{ margin: '0 0 8px 0', fontWeight: '600', fontSize: '1.1rem', color: '#003366' }}>
+                                {allSpeakers[activeTab].title}
+                            </p>
+                            <div style={{ margin: '0 0 12px 0', color: '#555', lineHeight: '1.5', fontSize: '1rem', whiteSpace: 'pre-line' }}>
+                                {allSpeakers[activeTab].affiliation}
+                            </div>
+                            <a 
+                                href={`mailto:${allSpeakers[activeTab].email}`} 
+                                style={{ 
+                                    color: '#003366', 
+                                    textDecoration: 'none', 
+                                    fontSize: '0.95rem', 
+                                    fontWeight: '500',
+                                    borderBottom: '1px solid rgba(0,51,102,0.2)'
+                                }}
+                            >
+                                ✉ {allSpeakers[activeTab].email}
+                            </a>
+                        </div>
+
+                        <div style={{ 
+                            backgroundColor: '#f9f9f9', 
+                            padding: '25px', 
+                            borderRadius: '12px',
+                            borderLeft: '4px solid #003366'
+                        }}>
+                            <h4 style={{ 
+                                margin: '0 0 12px 0', 
+                                color: '#003366', 
+                                fontSize: '0.9rem', 
+                                fontWeight: '700',
+                                letterSpacing: '0.5px' 
+                            }}>
+                                BIOGRAPHY / ABSTRACT
+                            </h4>
+                            <p style={{ 
+                                margin: 0, 
+                                lineHeight: '1.75', 
+                                color: '#444', 
+                                textAlign: 'justify' 
+                            }}>
+                                {allSpeakers[activeTab].abstract}
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
 };
 
 export default InvitedPresentations;
-
