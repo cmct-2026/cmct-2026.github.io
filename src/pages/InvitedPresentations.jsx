@@ -75,17 +75,7 @@ const SpeakerItem = ({ speaker }) => {
                 opacity: isOpen ? 1 : 0,
                 marginTop: isOpen ? '20px' : '0'
             }}>
-                <div style={{
-                    padding: '25px',
-                    backgroundColor: '#f8f9fa',
-                    borderLeft: '4px solid #003366',
-                    marginLeft: '180px', // Maintain alignment with text
-                    borderRadius: '0 4px 4px 0',
-                    color: '#444',
-                    lineHeight: '1.7',
-                    fontSize: '0.95rem',
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.05)'
-                }}>
+                <div className="speaker-bio">
                     <h4 style={{
                         marginTop: '0',
                         marginBottom: '15px',
