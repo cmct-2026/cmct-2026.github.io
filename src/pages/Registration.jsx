@@ -34,7 +34,7 @@ const Registration = () => {
                     }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '10px' }}>
                             <h3 style={{ margin: '0 0 10px 0', color: '#333', fontSize: '1.25rem' }}>
-                                General Registration <span style={{ fontWeight: 'normal', color: '#666', fontSize: '1rem', marginLeft: '5px' }}>/ 一般註冊</span>
+                                Full Registration <span style={{ fontWeight: 'normal', color: '#666', fontSize: '1rem', marginLeft: '5px' }}>/ 一般註冊</span>
                             </h3>
                             <span style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#003366' }}>NT$ 1,000</span>
                         </div>
@@ -48,7 +48,7 @@ const Registration = () => {
                     <div style={{ paddingBottom: '25px', marginBottom: '25px' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '10px' }}>
                             <h3 style={{ margin: '0 0 10px 0', color: '#333', fontSize: '1.25rem' }}>
-                                Student Free Registration <span style={{ fontWeight: 'normal', color: '#666', fontSize: '1rem', marginLeft: '5px' }}>/ 學生免費註冊</span>
+                                Student Registration <span style={{ fontWeight: 'normal', color: '#666', fontSize: '1rem', marginLeft: '5px' }}>/ 學生註冊</span>
                             </h3>
                             <span style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#003366' }}>Free</span>
                         </div>
