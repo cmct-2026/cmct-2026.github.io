@@ -8,45 +8,44 @@ const InvitedPresentations = () => {
     const allSpeakers = [
         {
             id: 'hsieh',
-            name: "謝孫源 教授 / Prof. Sun-Yuan Hsieh",
-            tabTitle: "謝孫源 教授",
+            name: "謝孫源 Sun-Yuan Hsieh",
+            tabTitle: "謝孫源 講座教授",
             title: "講座教授 兼 國際長 / Chair Professor & Dean of International Affairs",
             affiliation: "國立成功大學 資訊工程學系\nDepartment of Computer Science and Information Engineering, NCKU",
             email: "hsiehsy@mail.ncku.edu.tw",
             photo: sunYuanHsiehImg,
             type: "Keynote Speaker",
-            abstract: "To be announced."
+            abstract: ""
         },
         {
             id: 'yang',
-            name: "楊皓琮 助理教授 / Prof. Hao-Tsung Yang",
+            name: "楊皓琮 Hao-Tsung Yang",
             tabTitle: "楊皓琮 助理教授",
             title: "助理教授 / Assistant Professor",
             affiliation: "國立中央大學 資訊工程學系\nDepartment of Computer Science and Information Engineering, NCU",
             email: "htyang@ncu.edu.tw",
             photo: haoTsungYangImg,
             type: "Invited Speaker",
-            abstract: "To be announced."
+            abstract: ""
         },
         {
             id: 'liang',
-            name: "梁雅鈞 助理教授 / Prof. Ya-Chun Liang",
+            name: "梁雅鈞 Ya-Chun Liang",
             tabTitle: "梁雅鈞 助理教授",
             title: "助理教授 / Assistant Professor",
             affiliation: "國立清華大學 資訊工程學系\nDepartment of Computer Science and Information Engineering, NTHU",
             email: "ycliang@cs.nthu.edu.tw",
             photo: yaChunLiangImg,
             type: "Invited Speaker",
-            abstract: "To be announced."
+            abstract: ""
         }
     ];
 
     const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <div style={{ padding: '40px 20px', fontFamily: 'sans-serif', color: '#333' }}>
-            <h2 style={{ color: '#003366', textAlign: 'center', marginBottom: '40px' }}>Invited Talks & Presentations</h2>
-
+        <div style={{ marginTop: '0px', padding: '40px 20px', fontFamily: 'sans-serif', color: '#333' }}>
+            
             <div style={{ maxWidth: '950px', margin: '0 auto' }}>
                 
                 {/* Tabs 導覽列 */}
@@ -167,7 +166,7 @@ const InvitedPresentations = () => {
                                 fontWeight: '700',
                                 letterSpacing: '0.5px' 
                             }}>
-                                BIOGRAPHY / ABSTRACT
+                                Biography / Title / Abstract
                             </h4>
                             <p style={{ 
                                 margin: 0, 
