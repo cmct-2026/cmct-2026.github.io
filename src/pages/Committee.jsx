@@ -172,6 +172,19 @@ const Committee = () => {
             </div>
           </div>
 
+          {/* 8. Organizers */}
+          <div style={sectionStyle}>
+            <h3 style={titleStyle}>Organizers</h3>
+            <div style={listWrapperStyle}>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                <li style={rowStyle}><span>高孟駿 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>陳柏安 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>謝秉均 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>鄭雅文 (陽明交通大學)</span></li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
