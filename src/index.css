@@ -124,8 +124,6 @@ h3 {
   }
 
   .speaker-bio {
-    display: none;
-    /* Hide bio on mobile for cleaner look */
     margin-left: 0;
     border-left: none;
     border-top: 4px solid #003366;
