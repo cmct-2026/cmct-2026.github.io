@@ -26,7 +26,11 @@ const InvitedPresentations = () => {
             email: "htyang@ncu.edu.tw",
             photo: haoTsungYangImg,
             type: "Invited Speaker",
-            abstract: ""
+            topic: "Algorithmic Recourse and The Endogenous Data Drift Problem with Recourse-Seeking Users",
+            abstract_text: `Deep learning models are widely used in decision-making and recommendation systems, where they typically rely on the assumption of a static data distribution between training and deployment. However, real-world deployment environments often violate this assumption. Users who receive negative outcomes may adapt their features to meet model criteria, ie, recourse action. These adaptive behaviors create shifts in the data distribution and when models are retrained on this shifted data, a feedback loop emerges: user behavior influences the model, and the updated model in turn reshapes future user behavior.
+
+In this talk, I first introduce the core principles of recourse and its standard applications. I then explore the systemic consequences of models adapting to recourse-seeking users. We demonstrate, through both theoretical and empirical lenses, that this interaction pushes Logistic and MLP models toward higher decision standards. Over time, this leads to escalating recourse costs and diminished reliability of "optimal" actions. These findings draw critical parallels to economic theories of endogenous barriers to entry, highlighting how algorithmic retraining can unintentionally reinforce higher standards and gatekeep opportunities. Finally, I present algorithmic methods designed to mitigate these challenges and stabilize the long-term interaction between models and users.`,
+            bio: `Hao-Tsung Yang is an assistant professor at National Central University. Before that, he was a research associate at the School of Informatics in University of Edinburgh, U.K., supervised by Prof. Rik Sarkar. He receives his Ph.D. degree in Computer Science, Stony Brook University, U.S., in 2020, advised by Prof. Jie Gao and Prof. Shan Lin. Hao-Tsung Yang’s research sits at the intersection of autonomous systems, motion planning, and explainable AI (XAI). His work addresses the emerging challenges of integrating AI into human-centric environments, focusing on seamless human-AI interaction, cooperative systems, and defense against human-like adversaries. He aims to develop solutions that are not only computationally efficient but also transparent, tractable, and reliable.`
         },
         {
             id: 'liang',
@@ -42,6 +46,26 @@ const InvitedPresentations = () => {
     ];
 
     const [activeTab, setActiveTab] = useState(0);
+    const activeSpeaker = allSpeakers[activeTab];
+
+    const renderSpeakerAbstract = (speaker) => {
+        if (speaker.id === 'yang') {
+            return (
+                <>
+                    <p style={{ marginTop: 0, marginBottom: '1em' }}>
+                        <strong>Topic:</strong> {speaker.topic}
+                    </p>
+                    <p style={{ marginTop: 0, marginBottom: '1em', whiteSpace: 'pre-line' }}>
+                        <strong>Abstract:</strong> {speaker.abstract_text}
+                    </p>
+                    <p style={{ margin: 0, whiteSpace: 'pre-line' }}>
+                        <strong>Bio:</strong> {speaker.bio}
+                    </p>
+                </>
+            );
+        }
+        return <p style={{ margin: 0, whiteSpace: 'pre-line' }}>{speaker.abstract}</p>;
+    };
 
     return (
         <div style={{ marginTop: '0px', padding: '40px 20px', fontFamily: 'sans-serif', color: '#333' }}>
@@ -68,8 +92,6 @@ const InvitedPresentations = () => {
                                 textAlign: 'center',
                                 minWidth: '180px',
                                 borderBottom: activeTab === index ? '4px solid #003366' : '4px solid transparent',
-                                transition: 'all 0.2s ease',
-                                borderRadius: '8px 8px 0 0',
                                 fontSize: '1rem',
                                 fontWeight: activeTab === index ? '700' : '500',
                                 color: activeTab === index ? '#003366' : '#666',
@@ -92,8 +114,8 @@ const InvitedPresentations = () => {
                     {/* 左側照片區 */}
                     <div style={{ flex: '0 0 220px' }}>
                         <img
-                            src={allSpeakers[activeTab].photo}
-                            alt={allSpeakers[activeTab].name}
+                            src={activeSpeaker.photo}
+                            alt={activeSpeaker.name}
                             style={{
                                 width: '100%',
                                 height: 'auto',
@@ -120,7 +142,7 @@ const InvitedPresentations = () => {
                             gap: '8px'
                         }}>
                             <span style={{ width: '20px', height: '2px', backgroundColor: '#003366' }}></span>
-                            {allSpeakers[activeTab].type}
+                            {activeSpeaker.type}
                         </div>
 
                         <h3 style={{ 
@@ -129,18 +151,18 @@ const InvitedPresentations = () => {
                             fontSize: '1.8rem',
                             fontWeight: '800'
                         }}>
-                            {allSpeakers[activeTab].name}
+                            {activeSpeaker.name}
                         </h3>
                         
                         <div style={{ marginBottom: '25px' }}>
                             <p style={{ margin: '0 0 8px 0', fontWeight: '600', fontSize: '1.1rem', color: '#003366' }}>
-                                {allSpeakers[activeTab].title}
+                                {activeSpeaker.title}
                             </p>
                             <div style={{ margin: '0 0 12px 0', color: '#555', lineHeight: '1.5', fontSize: '1rem', whiteSpace: 'pre-line' }}>
-                                {allSpeakers[activeTab].affiliation}
+                                {activeSpeaker.affiliation}
                             </div>
                             <a 
-                                href={`mailto:${allSpeakers[activeTab].email}`} 
+                                href={`mailto:${activeSpeaker.email}`} 
                                 style={{ 
                                     color: '#003366', 
                                     textDecoration: 'none', 
@@ -149,7 +171,7 @@ const InvitedPresentations = () => {
                                     borderBottom: '1px solid rgba(0,51,102,0.2)'
                                 }}
                             >
-                                ✉ {allSpeakers[activeTab].email}
+                                ✉ {activeSpeaker.email}
                             </a>
                         </div>
 
@@ -168,14 +190,14 @@ const InvitedPresentations = () => {
                             }}>
                                 Biography / Title / Abstract
                             </h4>
-                            <p style={{ 
+                            <div style={{ 
                                 margin: 0, 
                                 lineHeight: '1.75', 
                                 color: '#444', 
-                                textAlign: 'justify' 
+                                textAlign: 'justify'
                             }}>
-                                {allSpeakers[activeTab].abstract}
-                            </p>
+                                {renderSpeakerAbstract(activeSpeaker)}
+                            </div>
                         </div>
                     </div>
                 </div>
