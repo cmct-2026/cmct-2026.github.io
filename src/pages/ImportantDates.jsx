@@ -42,7 +42,7 @@ const ImportantDates = () => {
                     <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                         <li style={rowStyle}>
                             <strong>Abstract/Full paper submission:</strong>
-                            <span>March 15, 2026</span>
+                            <span><s>March 15, 2026</s> <br /><span style={{ color: 'red' }}><strong>March 22, 2026</strong></span></span>
                         </li>
                         <li style={rowStyle}>
                             <strong>Paper notification:</strong>
