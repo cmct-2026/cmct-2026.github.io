@@ -98,8 +98,15 @@ const CallForPapers = () => {
     lineHeight: '1.8' 
 }}>
     <p style={{ margin: '0.5rem 0' }}>
-        本研討會接受論文摘要(1頁)或全文(含文獻至多6頁)投稿，論文格式請依研討會網站提供的樣版撰寫。最佳論文獎將由全文投稿中選出。請於 <strong>3/15</strong> 前將檔案寄至 <a href="mailto:cmct2026.workshop@gmail.com" style={{ color: '#0056b3' }}>cmct2026.workshop@gmail.com</a>，郵件主旨請註明：<code style={{ backgroundColor: '#f8f9fa', padding: '0.2rem 0.4rem', borderRadius: '4px', color: '#d63384', border: '1px solid #e9ecef' }}>[論文名稱_姓名]</code>。
-    </p>
+  本研討會接受論文摘要(1頁)或全文(含文獻至多6頁)投稿，論文格式請依研討會網站提供的樣版撰寫。最佳論文獎將由全文投稿中選出。請於 
+  {" "}
+  <strong>
+    <span style={{ textDecoration: 'line-through', color: 'black' }}>3/15</span> 
+    <span style={{ color: 'red', marginLeft: '4px' }}>3/29</span>
+  </strong> 
+  前將檔案寄至 <a href="mailto:cmct2026.workshop@gmail.com" style={{ color: '#0056b3' }}>cmct2026.workshop@gmail.com</a>，郵件主旨請註明：
+  <code style={{ backgroundColor: '#f8f9fa', padding: '0.2rem 0.4rem', borderRadius: '4px', color: '#d63384', border: '1px solid #e9ecef' }}>[論文名稱_姓名]</code>。
+</p>
     <p style={{ marginTop: '1rem', fontSize: '0.95rem' }}>
                             <strong>投稿 Template 樣版與範例檔案:</strong>{' '}
                             <a 
@@ -113,8 +120,14 @@ const CallForPapers = () => {
                         </p>
 
     <p style={{ margin: '1.5rem 0 0.5rem 0' }}>
-        We accept 1-page abstracts or full papers (max. 6 pages including references). Please adhere to the template available on the official website. Only full papers are eligible for the Best Paper Award selection. Please email your files to <a href="mailto:cmct2026.workshop@gmail.com" style={{ color: '#0056b3' }}>cmct2026.workshop@gmail.com</a> before <strong>March 15</strong>, with the subject line: <code style={{ backgroundColor: '#f8f9fa', padding: '0.2rem 0.4rem', borderRadius: '4px', color: '#d63384', border: '1px solid #e9ecef' }}>[Paper-Name_Your-Name]</code>.
-    </p>
+  We accept 1-page abstracts or full papers (max. 6 pages including references). Please adhere to the template available on the official website. Only full papers are eligible for the Best Paper Award selection. Please email your files to <a href="mailto:cmct2026.workshop@gmail.com" style={{ color: '#0056b3' }}>cmct2026.workshop@gmail.com</a> before 
+  {" "}
+  <strong>
+    <span style={{ textDecoration: 'line-through', color: 'black' }}>March 15</span> 
+    <span style={{ color: 'red', marginLeft: '6px' }}>March 29</span>
+  </strong>
+  , with the subject line: <code style={{ backgroundColor: '#f8f9fa', padding: '0.2rem 0.4rem', borderRadius: '4px', color: '#d63384', border: '1px solid #e9ecef' }}>[Paper-Name_Your-Name]</code>.
+</p>
 </div>
                         <p style={{ marginTop: '1rem', fontSize: '0.95rem' }}>
                             <strong>Templates & Sample Files:</strong>{' '}
