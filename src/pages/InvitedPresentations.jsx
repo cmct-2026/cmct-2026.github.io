@@ -40,11 +40,15 @@ In this talk, I first introduce the core principles of recourse and its standard
             name: "梁雅鈞 Ya-Chun Liang",
             tabTitle: "梁雅鈞 助理教授",
             title: "助理教授 / Assistant Professor",
-            affiliation: "國立清華大學 資訊工程學系\nDepartment of Computer Science and Information Engineering, NTHU",
+            affiliation: "國立清華大學 資訊工程學系\nDepartment of Computer Science, NTHU",
             email: "ycliang@cs.nthu.edu.tw",
             photo: yaChunLiangImg,
             type: "Invited Speaker",
-            abstract: ""
+            topic: "Scheduling under Uncertainty: Algorithms with Testing",
+            abstract_text: `In many real-world operational settings, such as medical emergency departments or aircraft maintenance, the exact time required to complete a task is initially unknown. However, this uncertainty can often be resolved by first performing a mandatory diagnostic test. This talk explores the algorithmic challenges of scheduling under this specific type of "explorable uncertainty." We will examine the problem of scheduling jobs with obligatory tests on a single machine, where each job consists of a known testing phase and a processing phase that only becomes known upon the test's completion. Focusing on the objective of minimizing the sum of completion times, we will evaluate the performance of online algorithms using competitive analysis. Key highlights of the talk include an introduction to natural priority-based scheduling for arbitrary test times, highlighting a novel graph-based analysis technique used to bound its performance. Furthermore, we will discuss the design of streamlined, threshold-based algorithms tailored for environments with uniform test times, and explore the fundamental limits and theoretical lower bounds for deterministic algorithms in these mandatory-testing settings. Overall, this talk provides new insights into the design and analysis of competitive scheduling policies under explorable uncertainty.
+            This is joint work with Konstantinos Dogeas and Thomas Erlebach.
+            `,
+            bio: `Ya-Chun Liang is currently an Assistant Professor with the Department of Computer Science at National Tsing Hua University. Prior to this, she served as an Assistant Professor in the Department of Computer Science and Information Engineering at National Cheng Kung University. She obtained her dual PhD degrees from the University of Liverpool (Electrical Engineering and Electronics) and National Tsing Hua University (Industrial Engineering and Engineering Management) in 2023, and subsequently served as a Postdoctoral Research Fellow at Columbia University. Her research focuses on dynamic and online algorithms for combinatorial optimization under uncertainty, with applications in scheduling, networking, resource allocation, and adaptive systems.`
         }
     ];
 
