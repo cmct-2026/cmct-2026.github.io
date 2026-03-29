@@ -79,7 +79,7 @@ const Committee = () => {
             <h3 style={titleStyle}>指導委員</h3>
             <div style={listWrapperStyle}>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                <li style={rowStyle}><span>徐讚愇 研究員 (中央研究院)</span></li>
+                <li style={rowStyle}><span>徐讚昇 研究員 (中央研究院)</span></li>
                 <li style={rowStyle}><span>陳健輝 教授 (臺灣大學)</span></li>
                 <li style={rowStyle}><span>廖崇碩 教授 (臺灣大學)</span></li>
                 <li style={rowStyle}><span>林耀鈴 教授 (靜宜大學)</span></li>
@@ -96,7 +96,7 @@ const Committee = () => {
             <div style={listWrapperStyle}>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 <li style={rowStyle}><span>蔡錫鈞 教授 (陽明交通大學)</span></li>
-                <li style={rowStyle}><span>林春成 院長 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>林春成 副院長 (陽明交通大學)</span></li>
                 <li style={rowStyle}><span>林妙聰 教授 (陽明交通大學)</span></li>
               </ul>
             </div>
@@ -169,6 +169,19 @@ const Committee = () => {
                   <span style={{ fontWeight: '500' }}>{name} ({school})</span>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* 8. Organizers */}
+          <div style={sectionStyle}>
+            <h3 style={titleStyle}>Organizers</h3>
+            <div style={listWrapperStyle}>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                <li style={rowStyle}><span>高孟駿 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>陳柏安 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>謝秉均 (陽明交通大學)</span></li>
+                <li style={rowStyle}><span>鄭雅文 (陽明交通大學)</span></li>
+              </ul>
             </div>
           </div>
 
