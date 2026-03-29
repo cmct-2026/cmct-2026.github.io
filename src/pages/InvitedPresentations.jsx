@@ -3,6 +3,7 @@ import { useState } from 'react';
 import sunYuanHsiehImg from '../assets/speakers/sun-yuan-hsieh.jpg';
 import haoTsungYangImg from '../assets/speakers/hao-tsung-yang.jpg';
 import yaChunLiangImg from '../assets/speakers/ya-chun-liang.jpg';
+import shihYuTsaiImg from '../assets/speakers/shih-yu-tsai.jpg';
 
 const InvitedPresentations = () => {
     const allSpeakers = [
@@ -51,7 +52,20 @@ In this talk, I first introduce the core principles of recourse and its standard
             This is joint work with Konstantinos Dogeas and Thomas Erlebach.
             `,
             bio: `Ya-Chun Liang is currently an Assistant Professor with the Department of Computer Science at National Tsing Hua University. Prior to this, she served as an Assistant Professor in the Department of Computer Science and Information Engineering at National Cheng Kung University. She obtained her dual PhD degrees from the University of Liverpool (Electrical Engineering and Electronics) and National Tsing Hua University (Industrial Engineering and Engineering Management) in 2023, and subsequently served as a Postdoctoral Research Fellow at Columbia University. Her research focuses on dynamic and online algorithms for combinatorial optimization under uncertainty, with applications in scheduling, networking, resource allocation, and adaptive systems.`
-        }
+        },
+        {
+            id: 'tsai',
+            name: "蔡詩妤 Shih-Yu Tsai",
+            tabTitle: "蔡詩妤 助理教授",
+            title: "助理教授 / Assistant Professor",
+            affiliation: "國立陽明交通大學 資訊管理與財務金融學系\nDepartment of Information Management and Finance, NYCU",
+            email: "shih-yu.tsai@nycu.edu.tw",
+            photo: shihYuTsaiImg,
+            type: "Invited Speaker",
+            topic: "To be announced",
+            abstract_text: "To be announced.",
+            bio: "To be announced."
+        },
     ];
 
     const [activeTab, setActiveTab] = useState(0);
