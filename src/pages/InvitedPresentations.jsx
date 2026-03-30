@@ -4,6 +4,7 @@ import sunYuanHsiehImg from '../assets/speakers/sun-yuan-hsieh.jpg';
 import haoTsungYangImg from '../assets/speakers/hao-tsung-yang.jpg';
 import yaChunLiangImg from '../assets/speakers/ya-chun-liang.jpg';
 import shihYuTsaiImg from '../assets/speakers/shih-yu-tsai.jpg';
+import bmtLinImg from '../assets/speakers/bmt-lin.jpg';
 
 const InvitedPresentations = () => {
     const allSpeakers = [
@@ -23,6 +24,20 @@ const InvitedPresentations = () => {
 Dr. Hsieh is also an experienced editor with editorial services to a number of journals, including serving as associate editors of ACM Computing Surveys, IEEE Transactions on Computers, IEEE ACCESS, IEEE Transactions on Reliability, Theoretical Computer Science (Elsevier), Discrete Applied Mathematics (Elsevier), Journal of Supercomputing (Springer), International Journal of Computer Mathematics (Taylor &amp; Francis Group), Parallel Processing Letters (World Scientific), Discrete Mathematics, Algorithms and Applications (World Scientific), Fundamental Informaticae (Polish Mathematical Society), and Journal of Interconnection Networks (World Scientific). In addition, he has served on organization committee and/or program committee of several dozens international conferences in computer science and computer engineering. To date, he has published 223 journal articles (including 96 in related fields’ top-tier IEEE Transactions and ACM Transactions), 98 conference papers, and five book chapters. His current research interests include design and analysis of algorithms, deep learning algorithms, fault-tolerant computing, bioinformatics, parallel and distributed computing, and algorithmic graph theory.`
         },
         */
+        {
+            id: 'lin',
+            name: "林妙聰 Lin, Bertrand M.T.",
+            tabTitle: "林妙聰 特聘教授",
+            title: "特聘教授 / Distinguished Professor",
+            affiliation: "國立陽明交通大學 醫務管理研究所\nInstitute of Health and Welfare Policy, National Yang Ming Chiao Tung University",
+            email: "bmtlin@nycu.edu.tw",
+            photo: bmtLinImg,
+            type: "Keynote Speaker",
+            topic: "To be announced",
+            abstract_text: "To be announced.",
+            bio: "To be announced."
+        },
+
         {
             id: 'yang',
             name: "楊皓琮 Hao-Tsung Yang",
