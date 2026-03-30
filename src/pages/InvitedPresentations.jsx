@@ -8,22 +8,6 @@ import bmtLinImg from '../assets/speakers/bmt-lin.jpg';
 
 const InvitedPresentations = () => {
     const allSpeakers = [
-        /*
-        {
-            id: 'hsieh',
-            name: "謝孫源 Sun-Yuan Hsieh",
-            tabTitle: "謝孫源 講座教授",
-            title: "講座教授 兼 國際長 / Chair Professor & Dean of International Affairs",
-            affiliation: "國立成功大學 資訊工程學系\nDepartment of Computer Science and Information Engineering, NCKU",
-            email: "hsiehsy@mail.ncku.edu.tw",
-            photo: sunYuanHsiehImg,
-            type: "Keynote Speaker",
-            topic: "Optimal Projection for GPS Trajectory Filtering under Directional Constraints",
-            abstract_text: `Directional constraints in trajectory processing arise in applications ranging from autonomous vehicle navigation to robotic motion planning, where agents must adhere to unidirectional or monotonic movement patterns. We formally study the problem of denoising a trajectory while constraining its projection to be strictly monotonic along a fixed direction. Despite its apparent simplicity, this formulation reveals intricate geometric structures that challenge existing heuristic approaches. In this talk, some interesting properties and algorithmic results will be presented.`,
-            bio: `Sun-Yuan Hsieh received PhD degree in computer science from National Taiwan University, Taipei, Taiwan, in June 1998. He then served the compulsory two-year military service. From August 2000 to January 2002, he was an assistant professor at the Department of Computer Science and Information Engineering, National Chi Nan University. In February 2002, he joined the Department of Computer Science and Information Engineering, National Cheng Kung University, and now he is a chair professor. His awards include the 2007 K. T. Lee Research Award, President&#39;s Citation Award (American Biographical Institute) in 2007, Engineering Professor Award of Chinese Institute of Engineers (Kaohsiung Branch) in 2008, National Science Council’s Outstanding Research Award in 2009, IEEE Outstanding Technical Achievement Award (IEEE Tainan Section) in 2011, Outstanding Electronic Engineering Professor Award of Chinese Institute of Electrical Engineers in 2013, and Outstanding Engineering Professor Award of Chinese Institute of Engineers in 2014. He is Fellow of the British Computer Society (BCS), Fellow of Institution of Engineering and Technology (IET), and Fellow of IEEE. The ACM has named Dr. Hsieh as distinguished members for outstanding contributions to computer science in 2020.
-Dr. Hsieh is also an experienced editor with editorial services to a number of journals, including serving as associate editors of ACM Computing Surveys, IEEE Transactions on Computers, IEEE ACCESS, IEEE Transactions on Reliability, Theoretical Computer Science (Elsevier), Discrete Applied Mathematics (Elsevier), Journal of Supercomputing (Springer), International Journal of Computer Mathematics (Taylor &amp; Francis Group), Parallel Processing Letters (World Scientific), Discrete Mathematics, Algorithms and Applications (World Scientific), Fundamental Informaticae (Polish Mathematical Society), and Journal of Interconnection Networks (World Scientific). In addition, he has served on organization committee and/or program committee of several dozens international conferences in computer science and computer engineering. To date, he has published 223 journal articles (including 96 in related fields’ top-tier IEEE Transactions and ACM Transactions), 98 conference papers, and five book chapters. His current research interests include design and analysis of algorithms, deep learning algorithms, fault-tolerant computing, bioinformatics, parallel and distributed computing, and algorithmic graph theory.`
-        },
-        */
         {
             id: 'lin',
             name: "林妙聰 Lin, Bertrand M.T.",
