@@ -29,7 +29,7 @@ Dr. Hsieh is also an experienced editor with editorial services to a number of j
             name: "林妙聰 Lin, Bertrand M.T.",
             tabTitle: "林妙聰 教授",
             title: "教授 / Professor",
-            affiliation: "國立陽明交通大學 資訊管理研究所\nInstitute of Information Management, National Yang Ming Chiao Tung University",
+            affiliation: "國立陽明交通大學 資訊管理研究所\nInstitute of Information Management, NYCU",
             email: "bmtlin@nycu.edu.tw",
             photo: bmtLinImg,
             type: "Keynote Speaker",
