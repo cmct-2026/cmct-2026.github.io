@@ -3,6 +3,8 @@ import { useState } from 'react';
 import sunYuanHsiehImg from '../assets/speakers/sun-yuan-hsieh.jpg';
 import haoTsungYangImg from '../assets/speakers/hao-tsung-yang.jpg';
 import yaChunLiangImg from '../assets/speakers/ya-chun-liang.jpg';
+import shihYuTsaiImg from '../assets/speakers/shih-yu-tsai.jpg';
+import bmtLinImg from '../assets/speakers/bmt-lin.jpg';
 
 const InvitedPresentations = () => {
     const allSpeakers = [
@@ -22,6 +24,19 @@ const InvitedPresentations = () => {
 Dr. Hsieh is also an experienced editor with editorial services to a number of journals, including serving as associate editors of ACM Computing Surveys, IEEE Transactions on Computers, IEEE ACCESS, IEEE Transactions on Reliability, Theoretical Computer Science (Elsevier), Discrete Applied Mathematics (Elsevier), Journal of Supercomputing (Springer), International Journal of Computer Mathematics (Taylor &amp; Francis Group), Parallel Processing Letters (World Scientific), Discrete Mathematics, Algorithms and Applications (World Scientific), Fundamental Informaticae (Polish Mathematical Society), and Journal of Interconnection Networks (World Scientific). In addition, he has served on organization committee and/or program committee of several dozens international conferences in computer science and computer engineering. To date, he has published 223 journal articles (including 96 in related fields’ top-tier IEEE Transactions and ACM Transactions), 98 conference papers, and five book chapters. His current research interests include design and analysis of algorithms, deep learning algorithms, fault-tolerant computing, bioinformatics, parallel and distributed computing, and algorithmic graph theory.`
         },
         */
+        {
+            id: 'lin',
+            name: "林妙聰 Lin, Bertrand M.T.",
+            tabTitle: "林妙聰 特聘教授",
+            title: "特聘教授 / Distinguished Professor",
+            affiliation: "國立陽明交通大學 醫務管理研究所\nInstitute of Health and Welfare Policy, National Yang Ming Chiao Tung University",
+            email: "bmtlin@nycu.edu.tw",
+            photo: bmtLinImg,
+            type: "Keynote Speaker",
+            topic: "To be announced",
+            abstract_text: "To be announced."
+        },
+
         {
             id: 'yang',
             name: "楊皓琮 Hao-Tsung Yang",
@@ -51,7 +66,19 @@ In this talk, I first introduce the core principles of recourse and its standard
             This is joint work with Konstantinos Dogeas and Thomas Erlebach.
             `,
             bio: `Ya-Chun Liang is currently an Assistant Professor with the Department of Computer Science at National Tsing Hua University. Prior to this, she served as an Assistant Professor in the Department of Computer Science and Information Engineering at National Cheng Kung University. She obtained her dual PhD degrees from the University of Liverpool (Electrical Engineering and Electronics) and National Tsing Hua University (Industrial Engineering and Engineering Management) in 2023, and subsequently served as a Postdoctoral Research Fellow at Columbia University. Her research focuses on dynamic and online algorithms for combinatorial optimization under uncertainty, with applications in scheduling, networking, resource allocation, and adaptive systems.`
-        }
+        },
+        {
+            id: 'tsai',
+            name: "蔡詩妤 Shih-Yu Tsai",
+            tabTitle: "蔡詩妤 助理教授",
+            title: "助理教授 / Assistant Professor",
+            affiliation: "國立陽明交通大學 資訊管理與財務金融學系\nDepartment of Information Management and Finance, NYCU",
+            email: "shih-yu.tsai@nycu.edu.tw",
+            photo: shihYuTsaiImg,
+            type: "Invited Speaker",
+            topic: "To be announced",
+            abstract_text: "To be announced."
+        },
     ];
 
     const [activeTab, setActiveTab] = useState(0);
