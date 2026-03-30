@@ -34,8 +34,7 @@ Dr. Hsieh is also an experienced editor with editorial services to a number of j
             photo: bmtLinImg,
             type: "Keynote Speaker",
             topic: "To be announced",
-            abstract_text: "To be announced.",
-            bio: "To be announced."
+            abstract_text: "To be announced."
         },
 
         {
@@ -78,8 +77,7 @@ In this talk, I first introduce the core principles of recourse and its standard
             photo: shihYuTsaiImg,
             type: "Invited Speaker",
             topic: "To be announced",
-            abstract_text: "To be announced.",
-            bio: "To be announced."
+            abstract_text: "To be announced."
         },
     ];
 
