@@ -28,7 +28,7 @@ Dr. Hsieh is also an experienced editor with editorial services to a number of j
             id: 'lin',
             name: "林妙聰 Lin, Bertrand M.T.",
             tabTitle: "林妙聰 教授",
-            title: "特聘教授 / Distinguished Professor",
+            title: "教授 / Professor",
             affiliation: "國立陽明交通大學 醫務管理研究所\nInstitute of Health and Welfare Policy, National Yang Ming Chiao Tung University",
             email: "bmtlin@nycu.edu.tw",
             photo: bmtLinImg,
