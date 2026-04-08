@@ -85,7 +85,7 @@ h3 {
 }
 
 .sponsor-logo {
-  max-height: 60px; /* smaller, appropriate logo size */
+  max-height: 100px; /* smaller, appropriate logo size */
   width: auto;
   display: block;
 }
