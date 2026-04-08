@@ -17,8 +17,9 @@ const InvitedPresentations = () => {
             email: "bmtlin@nycu.edu.tw",
             photo: bmtLinImg,
             type: "Keynote Speaker",
-            topic: "To be announced",
-            abstract_text: "To be announced."
+            topic: "Talent Scheduling in Film Production",
+            abstract_text: "In film production, talent scheduling is the task of arranging the filming activities with the aim to minimize the costs associated with holding actors. This problem is computationally hard due to its connection to the optimal linear arrangement problem. In this talk, we review the different approaches, including dynamic programming and branch-and-bound, to cultivating the talent scheduling problem. A special emphasis is set on the lower bounds of the minimum holding cost. The problem setting is further fine-grained from days into scenes, making the overall decisions involving three optimization issues. Tailored designed integer programming models and dynamic programming algorithms are developed and tested.",
+            bio: "Bertrand M.T. Lin is a professor within the Institute of Information Management and the Institute of Hospital and Health Care Administration at National Yang Ming Chiao Tung University. Dr. Lin earned his B.S. in Information Science, M.S. in Computer and Information Science, and Ph.D. in Computer Science and Information Engineering, all from National Chiao Tung University, Taiwan. Before joining NYCU in 2004, Dr. Lin was with Ming Chuan University and National Chi Nan University. He visited several institutions, such as Arizona State University, Kyoto University, the Hong Kong Institute of Advanced Studies, IBM Watson Research Center, New Jersey Institute of Technology, The Hong Kong Polytechnic University, University of Technology Sydney, University of Michigan, and Warwick Business School as visiting scholars/professors. Dr. Lin&#39;s research interests are mainly in operations management, machine scheduling, and discrete optimization, in both aspects of theory and applications. Dr. Lin serves the professional community as Associate Editors of Journal of Scheduling, Journal of Industrial and Management Optimization, and Asia Pacific Journal of Operational Research, and Area Editors of Computers and Industrial Engineering and NTU Management Review."
         },
 
         {
