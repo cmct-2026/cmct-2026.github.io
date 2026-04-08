@@ -49,9 +49,31 @@ const Home = () => {
 
                 <p style={{ marginBottom: '3.5rem' }}></p>
                 <br />
+                
+                <h2>Sponsors</h2>
+                <div className="sponsors">
+                <a href="https://aact.org.tw" target="_blank" rel="noopener">
+                    <img src="aact-BqXkWunU.png" alt="AACT logo" className="sponsor-logo" />
+                </a>
 
+                <a href="https://www.nstc.gov.tw/" target="_blank" rel="noopener">
+                    <img src="NSTC-logo.jpg" alt="NSTC logo" className="sponsor-logo" />
+                </a>
+
+                <a href="https://www.etop.org.tw/" target="_blank" rel="noopener">
+                    <img src="etop-Dznsqnl3.png" alt="ETOP logo" className="sponsor-logo" />
+                </a>
+
+                <a href="https://www.iis.sinica.edu.tw/" target="_blank" rel="noopener">
+                    <img src="iis-sinica-CVadS4XP.png" alt="IIS Sinica logo" className="sponsor-logo" />
+                </a>
+                </div>
+
+                <br /><br /><br />
+    
             </div>
         </div>
+        
     );
 };
 
