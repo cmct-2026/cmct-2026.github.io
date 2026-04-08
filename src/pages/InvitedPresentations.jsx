@@ -61,8 +61,9 @@ In this talk, I first introduce the core principles of recourse and its standard
             email: "shih-yu.tsai@nycu.edu.tw",
             photo: shihYuTsaiImg,
             type: "Invited Speaker",
-            topic: "To be announced",
-            abstract_text: "To be announced."
+            topic: "Obtaining Approximately Optimal and Diverse Solutions via Dispersion",
+            abstract_text: "There has been a long-standing interest in computing diverse solutions to optimization problems, and recent work has involved finding diverse solutions that are all optimal. However, sometimes, the space of exact solutions may be too small to achieve sufficient diversity. Motivated by this, we initiate the study of obtaining sufficiently diverse, yet approximately optimal solutions to optimization problems. By setting the diversity measure to the sum of pairwise distances between solutions, we obtain a general reduction to an associated budget-constrained optimization (BCO) problem and then prove that bi-approximations to the BCO can be used to give bi-approximations to our problem.",
+            bio: "Shih-Yu Tsai is a tenure-track Assistant Professor in the Department of Information Management and Finance at National Yang Ming Chiao Tung University. Her research interests include graph theory, algorithmic fairness, robotics scheduling, privacy in optimization, and parallel programming. She received her Ph.D. in Computer Science from Stony Brook University."
         },
     ];
 
