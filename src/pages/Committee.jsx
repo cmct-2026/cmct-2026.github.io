@@ -79,10 +79,10 @@ const Committee = () => {
             <h3 style={titleStyle}>指導委員</h3>
             <div style={listWrapperStyle}>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                <li style={rowStyle}><span>何錦文 教授 (中央大學)</span></li>
+                <li style={rowStyle}><span>林耀鈴 教授 (靜宜大學)</span></li>
                 <li style={rowStyle}><span>徐讚昇 研究員 (中央研究院)</span></li>
                 <li style={rowStyle}><span>陳健輝 教授 (臺灣大學)</span></li>
-                <li style={rowStyle}><span>廖崇碩 教授 (臺灣大學)</span></li>
-                <li style={rowStyle}><span>林耀鈴 教授 (靜宜大學)</span></li>
                 <li style={rowStyle}><span>張肇明 教授 (臺北商業大學)</span></li>
                 <li style={rowStyle}><span>彭勝龍 教授 (臺北商業大學)</span></li>
                 <li style={rowStyle}><span>楊昌彪 教授 (中山大學)</span></li>
@@ -144,7 +144,7 @@ const Committee = () => {
               }}
             >
               {[
-                ['王弘倫','臺灣師範大學'],['王釧茹','中央研究院'],['白恭瑞','明志科技大學'],
+                /*['王弘倫','臺灣師範大學'],['王釧茹','中央研究院'],['白恭瑞','明志科技大學'],
                 ['呂及人','中央研究院'],['呂育道','臺灣大學'],['呂學一','臺灣大學'],
                 ['李佳衛','臺北市立大學'],['李彥寰','臺灣大學'],['李權明','銘傳大學'],
                 ['林莊傑','臺灣海洋大學'],['林清池','臺灣海洋大學'],['林濬璈','臺北科技大學'],
@@ -155,7 +155,7 @@ const Committee = () => {
                 ['黃上恩','臺灣大學'],['黃光璿','暨南國際大學'],['楊進雄','臺北商業大學'],
                 ['劉智弘','臺灣大學'],['劉建宏','臺北科技大學'],['劉傳銘','臺北科技大學'],
                 ['謝孫源','成功大學'],['鍾文鈺','高雄科技大學'],['鐘楷閔','中央研究院'],
-                ['韓永楷','清華大學'],['蔡孟宗','中央研究院'],['蘇家玉','臺北醫學大學'],
+                ['韓永楷','清華大學'],['蔡孟宗','中央研究院'],['蘇家玉','臺北醫學大學'],*/
               ].map(([name, school]) => (
                 <div
                   key={name}
