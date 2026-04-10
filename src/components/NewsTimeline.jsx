@@ -3,8 +3,8 @@ import React from 'react';
 const newsData = [
     {
         date: '2026/04/10',
-        title: 'Conference Registration Deadline / 會議註冊截止日期',
-        content: 'Registration deadline is 04/10 23:59. / 會議註冊截止日期為 04/10 23:59。'
+        title: 'Conference Registration Deadline Prolonged / 會議註冊截止日期延長',
+        content: 'Registration deadline has been changed to 04/19. / 會議註冊截止日期已延長至 04/19。'
     },
     {
         date: '2026/04/08',
