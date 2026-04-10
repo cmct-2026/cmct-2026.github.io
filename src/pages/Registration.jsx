@@ -20,10 +20,10 @@ const Registration = () => {
                     boxSizing: 'border-box'
                 }}>
                     <p style={{ margin: 0, fontSize: '1.1rem', color: '#003366', fontWeight: 'bold' }}>
-                        Registration Due: April 10, 23:59
+                        Registration Due: April 19, 23:59
                     </p>
                     <p style={{ margin: '5px 0 0 0', fontSize: '1rem', color: '#003366', fontWeight: 'bold' }}>
-                        報名截止日期：4月10日 23:59
+                        報名截止日期：4月19日 23:59
                     </p>
                 </div>
 
