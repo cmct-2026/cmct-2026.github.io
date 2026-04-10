@@ -45,9 +45,36 @@ const Home = () => {
 
                 <p style={{ marginBottom: '3.5rem' }}></p>
                 <br />
+                
+                <h2>主辦單位</h2>
+                <div className="sponsors">
 
+                <a href="https://www.nycu.edu.tw/" target="_blank" rel="noopener">
+                    <img src="NYCU_logo.png" alt="NYCU logo" width='260'/>
+                </a>
+                
+                <a href="https://aact.org.tw" target="_blank" rel="noopener">
+                    <img src="aact-BqXkWunU.png" alt="AACT logo" width='140' />
+                </a>
+
+                </div>
+                <br /><br />
+
+                <h2>協辦單位</h2>
+                <div className="sponsors">
+                <a href="https://www.etop.org.tw/" target="_blank" rel="noopener">
+                    <img src="etop-Dznsqnl3.png" alt="ETOP logo" className="sponsor-logo" />
+                </a>
+
+                <a href="https://www.iis.sinica.edu.tw/" target="_blank" rel="noopener">
+                    <img src="iis-sinica-CVadS4XP.png" alt="IIS Sinica logo" className="sponsor-logo" />
+                </a>
+                </div>
+                <br /><br /><br />
+    
             </div>
         </div>
+        
     );
 };
 
