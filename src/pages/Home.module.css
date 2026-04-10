@@ -1,0 +1,6 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr; /* Always single column */
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+}

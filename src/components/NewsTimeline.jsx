@@ -2,6 +2,21 @@ import React from 'react';
 
 const newsData = [
     {
+        date: '2026/04/10',
+        title: 'Conference Registration Deadline / 會議註冊截止日期',
+        content: 'Registration deadline is 04/10 23:59. / 會議註冊截止日期為 04/10 23:59。'
+    },
+    {
+        date: '2026/04/08',
+        title: 'Paper Acceptance Notification / 論文接受通知',
+        content: 'Email notifications for accepted papers have been sent out. / 論文接受通知已透過電子郵件寄出。'
+    },
+    {
+        date: '2026/03/29',
+        title: 'Submission Deadline / 投稿截止',
+        content: 'The submission deadline for papers has passed. Thank you for your submissions! / 論文投稿截止日期已過。感謝您的投稿！'
+    },
+    {
         date: '2026/02/02',
         title: 'Website Launch / 網站上線',
         content: 'The CMCT 2026 website is officially online. / CMCT 2026 網站正式上線。'

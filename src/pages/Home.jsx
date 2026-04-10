@@ -6,6 +6,7 @@ import organizer1 from '../assets/organizer_1.png';
 import organizer2 from '../assets/organizer_2.png';
 import coOrganizerEtpc from '../assets/co_organizer_etpc.png';
 import coOrganizerIis from '../assets/co_organizer_iis.png';
+import styles from './Home.module.css';
 
 const Home = () => {
     return (
@@ -31,16 +32,11 @@ const Home = () => {
                 <p style={{ marginBottom: '2.5rem' }}></p>
 
                 {/* Two-column layout for ImportantDates and NewsTimeline */}
-                <div style={{ 
-                    display: 'flex', 
-                    gap: '3rem',
-                    marginBottom: '1.5rem',
-                    flexWrap: 'wrap'
-                }}>
-                    <div style={{ flex: '1 1 400px', minWidth: '300px' }}>
+                <div className={styles.gridContainer}>
+                    <div>
                         <NewsTimeline />
                     </div>
-                    <div style={{ flex: '1 1 400px', minWidth: '300px' }}>
+                    <div>
                         <ImportantDates />
                     </div>
                 </div>
