@@ -8,33 +8,18 @@ import bmtLinImg from '../assets/speakers/bmt-lin.jpg';
 
 const InvitedPresentations = () => {
     const allSpeakers = [
-        /*
-        {
-            id: 'hsieh',
-            name: "謝孫源 Sun-Yuan Hsieh",
-            tabTitle: "謝孫源 講座教授",
-            title: "講座教授 兼 國際長 / Chair Professor & Dean of International Affairs",
-            affiliation: "國立成功大學 資訊工程學系\nDepartment of Computer Science and Information Engineering, NCKU",
-            email: "hsiehsy@mail.ncku.edu.tw",
-            photo: sunYuanHsiehImg,
-            type: "Keynote Speaker",
-            topic: "Optimal Projection for GPS Trajectory Filtering under Directional Constraints",
-            abstract_text: `Directional constraints in trajectory processing arise in applications ranging from autonomous vehicle navigation to robotic motion planning, where agents must adhere to unidirectional or monotonic movement patterns. We formally study the problem of denoising a trajectory while constraining its projection to be strictly monotonic along a fixed direction. Despite its apparent simplicity, this formulation reveals intricate geometric structures that challenge existing heuristic approaches. In this talk, some interesting properties and algorithmic results will be presented.`,
-            bio: `Sun-Yuan Hsieh received PhD degree in computer science from National Taiwan University, Taipei, Taiwan, in June 1998. He then served the compulsory two-year military service. From August 2000 to January 2002, he was an assistant professor at the Department of Computer Science and Information Engineering, National Chi Nan University. In February 2002, he joined the Department of Computer Science and Information Engineering, National Cheng Kung University, and now he is a chair professor. His awards include the 2007 K. T. Lee Research Award, President&#39;s Citation Award (American Biographical Institute) in 2007, Engineering Professor Award of Chinese Institute of Engineers (Kaohsiung Branch) in 2008, National Science Council’s Outstanding Research Award in 2009, IEEE Outstanding Technical Achievement Award (IEEE Tainan Section) in 2011, Outstanding Electronic Engineering Professor Award of Chinese Institute of Electrical Engineers in 2013, and Outstanding Engineering Professor Award of Chinese Institute of Engineers in 2014. He is Fellow of the British Computer Society (BCS), Fellow of Institution of Engineering and Technology (IET), and Fellow of IEEE. The ACM has named Dr. Hsieh as distinguished members for outstanding contributions to computer science in 2020.
-Dr. Hsieh is also an experienced editor with editorial services to a number of journals, including serving as associate editors of ACM Computing Surveys, IEEE Transactions on Computers, IEEE ACCESS, IEEE Transactions on Reliability, Theoretical Computer Science (Elsevier), Discrete Applied Mathematics (Elsevier), Journal of Supercomputing (Springer), International Journal of Computer Mathematics (Taylor &amp; Francis Group), Parallel Processing Letters (World Scientific), Discrete Mathematics, Algorithms and Applications (World Scientific), Fundamental Informaticae (Polish Mathematical Society), and Journal of Interconnection Networks (World Scientific). In addition, he has served on organization committee and/or program committee of several dozens international conferences in computer science and computer engineering. To date, he has published 223 journal articles (including 96 in related fields’ top-tier IEEE Transactions and ACM Transactions), 98 conference papers, and five book chapters. His current research interests include design and analysis of algorithms, deep learning algorithms, fault-tolerant computing, bioinformatics, parallel and distributed computing, and algorithmic graph theory.`
-        },
-        */
         {
             id: 'lin',
             name: "林妙聰 Lin, Bertrand M.T.",
             tabTitle: "林妙聰 教授",
             title: "教授 / Professor",
-            affiliation: "國立陽明交通大學 醫務管理研究所\nInstitute of Health and Welfare Policy, National Yang Ming Chiao Tung University",
+            affiliation: "國立陽明交通大學 資訊管理研究所\nInstitute of Information Management, NYCU",
             email: "bmtlin@nycu.edu.tw",
             photo: bmtLinImg,
             type: "Keynote Speaker",
-            topic: "To be announced",
-            abstract_text: "To be announced."
+            topic: "Talent Scheduling in Film Production",
+            abstract_text: "In film production, talent scheduling is the task of arranging the filming activities with the aim to minimize the costs associated with holding actors. This problem is computationally hard due to its connection to the optimal linear arrangement problem. In this talk, we review the different approaches, including dynamic programming and branch-and-bound, to cultivating the talent scheduling problem. A special emphasis is set on the lower bounds of the minimum holding cost. The problem setting is further fine-grained from days into scenes, making the overall decisions involving three optimization issues. Tailored designed integer programming models and dynamic programming algorithms are developed and tested.",
+            bio: "Bertrand M.T. Lin is a professor within the Institute of Information Management and the Institute of Hospital and Health Care Administration at National Yang Ming Chiao Tung University. Dr. Lin earned his B.S. in Information Science, M.S. in Computer and Information Science, and Ph.D. in Computer Science and Information Engineering, all from National Chiao Tung University, Taiwan. Before joining NYCU in 2004, Dr. Lin was with Ming Chuan University and National Chi Nan University. He visited several institutions, such as Arizona State University, Kyoto University, the Hong Kong Institute of Advanced Studies, IBM Watson Research Center, New Jersey Institute of Technology, The Hong Kong Polytechnic University, University of Technology Sydney, University of Michigan, and Warwick Business School as visiting scholars/professors. Dr. Lin&#39;s research interests are mainly in operations management, machine scheduling, and discrete optimization, in both aspects of theory and applications. Dr. Lin serves the professional community as Associate Editors of Journal of Scheduling, Journal of Industrial and Management Optimization, and Asia Pacific Journal of Operational Research, and Area Editors of Computers and Industrial Engineering and NTU Management Review."
         },
 
         {
@@ -76,8 +61,9 @@ In this talk, I first introduce the core principles of recourse and its standard
             email: "shih-yu.tsai@nycu.edu.tw",
             photo: shihYuTsaiImg,
             type: "Invited Speaker",
-            topic: "To be announced",
-            abstract_text: "To be announced."
+            topic: "Obtaining Approximately Optimal and Diverse Solutions via Dispersion",
+            abstract_text: "There has been a long-standing interest in computing diverse solutions to optimization problems, and recent work has involved finding diverse solutions that are all optimal. However, sometimes, the space of exact solutions may be too small to achieve sufficient diversity. Motivated by this, we initiate the study of obtaining sufficiently diverse, yet approximately optimal solutions to optimization problems. By setting the diversity measure to the sum of pairwise distances between solutions, we obtain a general reduction to an associated budget-constrained optimization (BCO) problem and then prove that bi-approximations to the BCO can be used to give bi-approximations to our problem.",
+            bio: "Shih-Yu Tsai is a tenure-track Assistant Professor in the Department of Information Management and Finance at National Yang Ming Chiao Tung University. Her research interests include graph theory, algorithmic fairness, robotics scheduling, privacy in optimization, and parallel programming. She received her Ph.D. in Computer Science from Stony Brook University."
         },
     ];
 
