@@ -8,7 +8,7 @@ const PastConferences = () => {
         { id: 4, date: '1991/5/4', host: '中正大學資訊工程學系', organizers: '張貿翔' },
         { id: 5, date: '1992/5/2', host: '中正大學資訊工程學系', organizers: '李新林' },
         { id: 6, date: '1992/11/27~28', host: '中山大學應用數學系', organizers: '官大智' },
-        { id: 7, date: '1993/4/30~/5/1', host: '交通大學資資訊科學系', organizers: '徐力行' },
+        { id: 7, date: '1993/4/30~/5/1', host: '交通大學資訊科學系', organizers: '徐力行' },
         { id: 8, date: '1993/12/11', host: '清華大學資訊科學系', organizers: '唐傳義' },
         { id: 9, date: '1994/5/7', host: '中央大學資訊工程學系', organizers: '何錦文' },
         { id: 10, date: '1994/12/9', host: '中興大學應用數學系', organizers: '余明興' },
