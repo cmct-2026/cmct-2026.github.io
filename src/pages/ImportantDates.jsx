@@ -43,23 +43,21 @@ const ImportantDates = () => {
                         <li style={rowStyle}>
                             <strong>Abstract/Full paper submission:</strong>
                             <span>
-                                <s>March 15, 2026</s> <br />
-                                <s>March 22, 2026</s> <br />
-                                <span style={{ color: 'red' }}><strong>March 29, 2026</strong></span>
+                                <s>March 29, 2026</s>
                             </span>
                         </li>
                         <li style={rowStyle}>
                             <strong>Paper notification:</strong>
                             <span>
-                                <s>April 2, 2026</s> <br />
-                                <span><strong>April 6, 2026</strong></span>
+                                <s>April 6, 2026</s>
                             </span>
                         </li>
                         <li style={rowStyle}>
                             <strong>Camera-ready paper due date:</strong>
                             <span>
                                 <s>April 10, 2026</s> <br />
-                                <span><strong>April 13, 2026</strong></span>
+                                <s>April 13, 2026</s> <br />
+                                <span><strong>April 19, 2026</strong></span>
                             </span>
                         </li>
                         <li style={rowStyle}>
