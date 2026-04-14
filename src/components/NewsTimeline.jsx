@@ -2,6 +2,11 @@ import React from 'react';
 
 const newsData = [
     {
+        date: '2026/04/14',
+        title: 'Program Agenda Announced / 會議議程表已公布',
+        content: 'Program agenda pdf file has been announced in program page. / 會議議程表已公布在 program 頁面。'
+    },
+    {
         date: '2026/04/10',
         title: 'Conference Registration Deadline Prolonged / 會議註冊截止日期延長',
         content: 'Registration deadline has been changed to 04/19. / 會議註冊截止日期已延長至 04/19。'

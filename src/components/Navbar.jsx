@@ -27,8 +27,8 @@ const Navbar = ({ isMenuOpen, toggleMenu, closeMenu }) => {
         <li><Link to="/committee" onClick={closeMenu} className={isActive('/committee') ? 'active-tab' : ''}>Committees</Link></li>
         <li><Link to="/important-dates" onClick={closeMenu} className={isActive('/important-dates') ? 'active-tab' : ''}>Important Dates</Link></li>
         {/* <li><Link to="/accepted-papers" onClick={closeMenu}>Accepted Papers</Link></li>
-        <li><Link to="/program" onClick={closeMenu}>Program</Link></li>
         <li><Link to="/keynote-speakers" onClick={closeMenu}>Keynote Speakers</Link></li> */}
+        <li><Link to="/program" onClick={closeMenu} className={isActive('/program') ? 'active-tab' : ''}>Program</Link></li>
         <li><Link to="/invited-presentations" onClick={closeMenu} className={isActive('/invited-presentations') ? 'active-tab' : ''}>Invited talks</Link></li>
         <li><Link to="/registration" onClick={closeMenu} className={isActive('/registration') ? 'active-tab' : ''}>Registration</Link></li>
         <li><Link to="/venue" onClick={closeMenu} className={isActive('/venue') ? 'active-tab' : ''}>Venue & Accommodation</Link></li>
