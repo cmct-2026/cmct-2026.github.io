@@ -60,6 +60,7 @@ const Registration = () => {
                 </div>
 
                 {/* 付款資訊區塊 */}
+                {/*
                 <div style={{ 
                     marginBottom: '50px', 
                     padding: '30px', 
@@ -73,7 +74,6 @@ const Registration = () => {
                     </h3>
                     
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', flexWrap: 'wrap' }}>
-                        {/* 方案 A */}
                         <div style={{ padding: '20px', border: '1px solid #eee', borderRadius: '6px', backgroundColor: '#fafafa' }}>
                             <strong style={{ display: 'block', marginBottom: '10px' }}>Option A: Bank Transfer / 銀行匯款</strong>
                             <div style={{ fontSize: '0.95rem', lineHeight: '1.8', color: '#444' }}>
@@ -89,7 +89,6 @@ const Registration = () => {
                             銀行匯款者，請提供「匯款日期時間」與「帳號末五碼」，以供核對款項。
                         </div>
 
-                        {/* 方案 B */}
                         <div style={{ padding: '20px', border: '1px solid #eee', borderRadius: '6px', backgroundColor: '#fafafa', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                             <div>
                                 <strong style={{ display: 'block', marginBottom: '10px' }}>Option B: Credit Card / 線上刷卡</strong>
@@ -123,8 +122,10 @@ const Registration = () => {
                     </div>
 
                 </div>
+                */}
 
                 {/* 報名表單按鈕 */}
+                {/*
                 <div style={{ textAlign: 'center', marginTop: '10px', padding: '0px' }}>
                     <p style={{ marginBottom: '25px', color: '#444', fontWeight: '500' }}>
                         Please click the button below to register: / 註冊請點擊下方按鈕：
@@ -157,6 +158,10 @@ const Registration = () => {
                     >
                         Go to Registration Form / 前往註冊
                     </a>
+                </div>
+                */}
+                <div style={{ textAlign: 'center', marginTop: '40px', padding: '20px', backgroundColor: '#f8d7da', color: '#721c24', borderRadius: '8px', border: '1px solid #f5c6cb' }}>
+                    <h3 style={{ margin: 0 }}>註冊時間已過 / Registration has closed.</h3>
                 </div>
             </div>
         </div>
