@@ -24,8 +24,8 @@ const InvitedPresentations = () => {
 
         {
             id: 'yang',
-            name: "楊皓琮 Hao-Tsung Yang",
-            tabTitle: "楊皓琮 助理教授",
+            name: "楊晧琮 Hao-Tsung Yang",
+            tabTitle: "楊晧琮 助理教授",
             title: "助理教授 / Assistant Professor",
             affiliation: "國立中央大學 資訊工程學系\nDepartment of Computer Science and Information Engineering, NCU",
             email: "htyang@ncu.edu.tw",
